@@ -1,4 +1,9 @@
-const Dot = ({ num, currentPage }) => {
+interface Pages {
+  num?: number;
+  currentPage: number;
+}
+
+const Dot: React.FC<Pages> = ({ num, currentPage }) => {
   return (
     <div
       style={{
@@ -7,14 +12,13 @@ const Dot = ({ num, currentPage }) => {
         border: '1px solid black',
         borderRadius: 999,
         backgroundColor: currentPage === num ? 'black' : 'transparent',
-        transitionDuration: 1000,
         transition: 'background-color 0.5s',
       }}
     ></div>
   );
 };
 
-const Dots = ({ currentPage }) => {
+const Dots: React.FC<Pages> = ({ currentPage }) => {
   return (
     <div style={{ position: 'fixed', top: '50%', right: 100 }}>
       <div
