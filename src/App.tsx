@@ -1,11 +1,10 @@
-import { useState } from 'react';
+
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import './App.css';
 import { FullPage, Slide } from "react-full-page";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <FullPage>
