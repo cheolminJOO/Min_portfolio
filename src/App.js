@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import "./App.css";
+import { useEffect, useRef, useState } from 'react';
+import './App.css';
 
-import Dots from "./Dots";
+import Dots from './Dots';
+import Introduction from './Unit/Introduce/Introduction';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
@@ -18,76 +19,76 @@ function App() {
         // 스크롤 내릴 때
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           //현재 1페이지
-          console.log("현재 1페이지, down");
+          console.log('현재 1페이지, down');
           outerDivRef?.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
           setCurrentPage(2);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 2페이지
-          console.log("현재 2페이지, down");
+          console.log('현재 2페이지, down');
           outerDivRef.current.scrollTo({
             top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
           setCurrentPage(3);
         } else {
           // 현재 3페이지
-          console.log("현재 3페이지, down");
+          console.log('현재 3페이지, down');
           outerDivRef.current.scrollTo({
             top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
         }
       } else {
         // 스크롤 올릴 때
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           //현재 1페이지
-          console.log("현재 1페이지, up");
+          console.log('현재 1페이지, up');
           outerDivRef.current.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 2페이지
-          console.log("현재 2페이지, up");
+          console.log('현재 2페이지, up');
           outerDivRef.current.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
           setCurrentPage(1);
         } else {
           // 현재 3페이지
-          console.log("현재 3페이지, up");
+          console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           });
           setCurrentPage(2);
         }
       }
     };
     const outerDivRefCurrent = outerDivRef.current;
-    outerDivRefCurrent.addEventListener("wheel", wheelHandler);
+    outerDivRefCurrent.addEventListener('wheel', wheelHandler);
     return () => {
-      outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
+      outerDivRefCurrent.removeEventListener('wheel', wheelHandler);
     };
   }, []);
   return (
-    <div ref={outerDivRef} className="outer">
+    <div ref={outerDivRef} className='outer'>
       <Dots currentPage={currentPage} />
-      <div className="inner bg-yellow">1</div>
-      <div className="divider"></div>
-      <div className="inner bg-blue">2</div>
-      <div className="divider"></div>
-      <div className="inner bg-pink">3</div>
+      <Introduction />
+      <div className='divider'></div>
+      <div className='inner bg-blue'>2</div>
+      <div className='divider'></div>
+      <div className='inner bg-pink'>3</div>
     </div>
   );
 }
