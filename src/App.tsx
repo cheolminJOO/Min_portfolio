@@ -6,11 +6,15 @@ import Introduction from './Unit/Introduce/Introduction';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
-  const outerDivRef = useRef();
+  const outerDivRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(1);
   useEffect(() => {
-    const wheelHandler = (e) => {
+    const wheelHandler = (e: React.WheelEvent<HTMLDivElement>) => {
       e.preventDefault();
+      if (!outerDivRef.current) {
+        return;
+      }
+
       const { deltaY } = e;
       const { scrollTop } = outerDivRef.current; // 스크롤 위쪽 끝부분 위치
       const pageHeight = window.innerHeight; // 화면 세로길이, 100vh와 같습니다.
@@ -76,9 +80,24 @@ function App() {
       }
     };
     const outerDivRefCurrent = outerDivRef.current;
-    outerDivRefCurrent.addEventListener('wheel', wheelHandler);
+
+    if (outerDivRefCurrent) {
+      // @ts-expect-error just
+      outerDivRefCurrent.addEventListener('wheel', wheelHandler);
+    } else {
+      console.error(
+        'outerDivRef가 null입니다. 이벤트 리스너를 추가하지 않습니다.'
+      );
+    }
     return () => {
-      outerDivRefCurrent.removeEventListener('wheel', wheelHandler);
+      if (outerDivRefCurrent) {
+        // @ts-expect-error just
+        outerDivRefCurrent.removeEventListener('wheel', wheelHandler);
+      } else {
+        console.error(
+          'outerDivRef가 null입니다. 이벤트 리스너를 제거하지 않습니다.'
+        );
+      }
     };
   }, []);
   return (
