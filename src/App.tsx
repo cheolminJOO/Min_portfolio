@@ -1,22 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import './App.css';
-import { FullPage, Slide } from 'react-full-page';
+import Introduction from './test/Introduction';
 
 function App() {
-  return (
-    <FullPage>
-      <Slide>
-        <h1>저는 주철민입니다.</h1>
-      </Slide>
-      <Slide>
-        <h1>Another slide content</h1>
-      </Slide>
-      <Slide>
-        <h1>Another slide content</h1>
-      </Slide>
-    </FullPage>
-  );
+  return <Introduction />;
 }
 
 export default App;
