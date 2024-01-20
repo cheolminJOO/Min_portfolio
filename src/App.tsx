@@ -1,27 +1,24 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import './App.css';
+import { FullPage, Slide } from "react-full-page";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>안녕하세요</div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <FullPage>
+      <Slide>
+        <h1>저는 주철민입니다.</h1>
+      </Slide>
+      <Slide>
+        <h1>Another slide content</h1>
+      </Slide>
+      <Slide>
+        <h1>Another slide content</h1>
+      </Slide>
+    </FullPage>
   );
 }
 
