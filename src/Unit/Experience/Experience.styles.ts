@@ -92,11 +92,11 @@ export const TitleAndNumber = styled.div``;
 export const YoutubeImg = styled(motion.img)`
   width: 70px;
   height: 50px;
-  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/redzoom.png'),
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger.png'),
     auto;
 `;
 
 export const ProjectImg = styled(motion.img)`
-  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/redzoom.png'),
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger.png'),
     auto;
 `;
