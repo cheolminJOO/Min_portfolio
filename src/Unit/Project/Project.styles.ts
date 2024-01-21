@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.div`
   background-color: white;
@@ -64,7 +65,13 @@ export const TitleSpan = styled.div`
   font-weight: bolder;
 `;
 
-export const ProjectBoxDiv = styled.div`
+export const SubTitleSpan = styled.div`
+  font-size: 17px;
+  color: black;
+  font-weight: bolder;
+`;
+
+export const ProjectBoxDiv = styled(motion.div)`
   margin: 3rem;
   width: 350px;
   cursor: pointer;
@@ -78,7 +85,14 @@ export const TitleAndNumberBox = styled.div`
 
 export const TitleAndNumber = styled.div``;
 
-export const GithubImg = styled.img`
+export const GithubImg = styled(motion.img)`
   width: 70px;
   height: 50px;
 `;
+
+export const YoutubeImg = styled(motion.img)`
+  width: 50px;
+  height: 50px;
+`;
+
+export const ProjectImg = styled(motion.img)``;
