@@ -4,6 +4,7 @@ export const Container = styled.div`
   background-color: black;
   width: 100vw;
   height: 100vh;
+  display: flex;
 `;
 
 export const TextBox = styled.div`
@@ -15,9 +16,14 @@ export const TextBox = styled.div`
   align-items: center;
 `;
 
+export const ProfileImg = styled.img`
+  width: 600px;
+  height: 100%;
+`;
+
 export const FirstLineTextBox = styled.div`
   display: flex;
-`
+`;
 
 export const HightLightText = styled.div`
   font-size: 50px;

@@ -1,51 +1,11 @@
-import { useState } from 'react';
-import * as S from './Experience.styles';
-import WorldForum from '../Modal/WorldForum/WorldForum';
-import YouthForum from '../Modal/YouthForum/YouthForum';
-import Kistep from '../Modal/KISTEP/Kistep';
-import Epis from '../Modal/EPIS/Epis';
+import * as S from './Cheolmin.styles';
 
-const Experience = () => {
-  const [isWorldForum, setIsWorldForum] = useState(false);
-  const [isYouthForum, setIsYouthForum] = useState(false);
-  const [isKistep, setIsKistep] = useState(false);
-  const [isEpis, setIsEpis] = useState(false);
-  const onClickChrome = () => {
-    window.open(
-      'https://ichworldforum.org/2022-%ec%84%b8%ea%b3%84%eb%ac%b4%ed%98%95%eb%ac%b8%ed%99%94%ec%9c%a0%ec%82%b0%ed%8f%ac%eb%9f%bc?lang=ko',
-      '_blank'
-    );
-  };
-
-  const onClickFirstImg = () => {
-    setIsWorldForum((prev) => !prev);
-  };
-
-  const onClickSecondImg = () => {
-    setIsYouthForum((prev) => !prev);
-  };
-
-  const onClickThirdImg = () => {
-    setIsEpis((prev) => !prev);
-  };
-
-  const onClickFourthImg = () => {
-    setIsKistep((prev) => !prev);
-  };
-
-  const onClickSecondChrome = () => {
-    window.open('https://zep.us/play/2mYqBe', '_blank');
-  };
-
+const Cheolmin = () => {
   return (
     <S.Container>
-      {isWorldForum && <WorldForum onCloseModal={onClickFirstImg} />}
-      {isYouthForum && <YouthForum onCloseModal={onClickSecondImg} />}
-      {isKistep && <Kistep onCloseModal={onClickFourthImg} />}
-      {isEpis && <Epis onCloseModal={onClickThirdImg} />}
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> What I Experienced? </S.FirstText>
+          <S.FirstText> Who am I ? </S.FirstText>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>
@@ -58,7 +18,6 @@ const Experience = () => {
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
-                onClick={onClickChrome}
                 src='/chrome.png'
                 alt='크롬 로고 '
                 whileHover={{ scale: 1.1 }}
@@ -68,7 +27,6 @@ const Experience = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              onClick={onClickFirstImg}
               src='/ICHWORLDFORUM.png'
               alt='포럼'
               whileHover={{ scale: 1.05 }}
@@ -85,7 +43,6 @@ const Experience = () => {
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
-                onClick={onClickSecondChrome}
                 src='/chrome.png'
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
@@ -95,7 +52,6 @@ const Experience = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              onClick={onClickSecondImg}
               src='/ICHYOUTHFORUM.png'
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
@@ -121,7 +77,6 @@ const Experience = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              onClick={onClickThirdImg}
               src='/EPIS.png'
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
@@ -146,13 +101,7 @@ const Experience = () => {
             </div>
           </S.TitleAndNumberBox>
           <div>
-            <S.ProjectImg
-              onClick={onClickFourthImg}
-              src='/KISTEP.png'
-              alt='instagram logo'
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 1 }}
-            />
+            <img src='/KISTEP.png' alt='instagram logo' />
           </div>
         </S.ProjectBoxDiv>
         <div></div>
@@ -162,4 +111,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Cheolmin;

@@ -5,6 +5,7 @@ import Dots from './Dots';
 import Introduction from './Unit/Introduce/Introduction';
 import Project from './Unit/Project/Project';
 import Experience from './Unit/Experience/Experience';
+import Cheolmin from './Unit/Cheolmin/Cheolmin';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
@@ -41,14 +42,15 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(3);
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           // 현재 3페이지
-          console.log('현재 3페이지, down');
+          console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
-            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
             left: 0,
             behavior: 'smooth',
           });
+          setCurrentPage(4);
         }
       } else {
         // 스크롤 올릴 때
@@ -69,7 +71,7 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(1);
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           // 현재 3페이지
           console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
@@ -78,6 +80,15 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(2);
+        } else {
+          // 현재 4페이지
+          console.log('현재 3페이지, up');
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 2 + DIVIDER_HEIGHT,
+            left: 0,
+            behavior: 'smooth',
+          });
+          setCurrentPage(3);
         }
       }
     };
@@ -106,9 +117,9 @@ function App() {
     <div ref={outerDivRef} className='outer'>
       <Dots currentPage={currentPage} />
       <Introduction />
-      <Project/>
-      <Experience/>
-      <div className='divider'></div>
+      <Project />
+      <Experience />
+      <Cheolmin />
       <div className='inner bg-pink'>3</div>
     </div>
   );

@@ -42,7 +42,7 @@ const Project = () => {
             <div>
               <S.GithubImg
                 onClick={onClickFirstGithub}
-                src='/github.png'
+                src='/github2.png'
                 alt='깃허브'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
@@ -75,7 +75,7 @@ const Project = () => {
             <div>
               <S.GithubImg
                 onClick={onClickSecondGithub}
-                src='/github.png'
+                src='/github2.png'
                 alt='깃허브'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
@@ -107,7 +107,7 @@ const Project = () => {
             <div>
               <S.GithubImg
                 onClick={onCLickThirdGithub}
-                src='/github.png'
+                src='/github2.png'
                 alt='깃허브'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
@@ -139,7 +139,7 @@ const Project = () => {
             <div>
               <S.GithubImg
                 onClick={onClickFourthGithub}
-                src='/github.png'
+                src='/github2.png'
                 alt='깃허브'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}

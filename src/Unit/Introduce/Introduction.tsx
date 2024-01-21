@@ -10,6 +10,7 @@ export default function Introduction() {
         </S.FirstLineTextBox>
         <S.SecondText>주철민 입니다.</S.SecondText>
       </S.TextBox>
+      <S.ProfileImg src='/cheolmin.png' alt='프로필이미지' />
     </S.Container>
   );
 }
