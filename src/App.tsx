@@ -4,6 +4,7 @@ import './App.css';
 import Dots from './Dots';
 import Introduction from './Unit/Introduce/Introduction';
 import Project from './Unit/Project/Project';
+import Experience from './Unit/Experience/Experience';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
@@ -106,7 +107,7 @@ function App() {
       <Dots currentPage={currentPage} />
       <Introduction />
       <Project/>
-      <div className='inner bg-blue'>2</div>
+      <Experience/>
       <div className='divider'></div>
       <div className='inner bg-pink'>3</div>
     </div>
