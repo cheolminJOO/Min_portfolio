@@ -28,7 +28,7 @@ const Project = () => {
     <S.Container>
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> What I Did ? </S.FirstText>
+          <S.FirstText> 저는 ____를 만들었습니다.</S.FirstText>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>

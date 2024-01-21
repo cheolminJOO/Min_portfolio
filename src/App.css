@@ -6,6 +6,8 @@ body {
 .outer {
   height: 100vh;
   overflow-y: auto;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/red.png'),
+    auto;
 }
 
 /* 화면에서 스크롤바 안보이게 */

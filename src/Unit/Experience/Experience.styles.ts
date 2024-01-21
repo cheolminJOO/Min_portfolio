@@ -21,6 +21,8 @@ export const TextBox = styled.div`
 
 export const FirstLineTextBox = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const HightLightText = styled.div`
@@ -74,7 +76,6 @@ export const SubTitleSpan = styled.div`
 export const ProjectBoxDiv = styled(motion.div)`
   margin: 3rem;
   width: 360px;
-  cursor: pointer;
   border: 1px solid white;
   background-color: white;
   border-radius: 40px;
@@ -91,6 +92,11 @@ export const TitleAndNumber = styled.div``;
 export const YoutubeImg = styled(motion.img)`
   width: 70px;
   height: 50px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/redzoom.png'),
+    auto;
 `;
 
-export const ProjectImg = styled(motion.img)``;
+export const ProjectImg = styled(motion.img)`
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/redzoom.png'),
+    auto;
+`;

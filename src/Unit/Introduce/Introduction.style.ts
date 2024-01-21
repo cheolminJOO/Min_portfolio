@@ -33,6 +33,7 @@ export const HightLightText = styled.div`
   font-size: 50px;
   font-weight: bolder;
   color: aqua;
+  border-right: 2px solid white;
 `;
 
 export const FirstText = styled.span`

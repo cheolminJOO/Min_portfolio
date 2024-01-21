@@ -45,7 +45,7 @@ const Experience = () => {
       {isEpis && <Epis onCloseModal={onClickThirdImg} />}
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> What I Experienced? </S.FirstText>
+          <S.FirstText> 저는 ____를 경험 했습니다. </S.FirstText>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>

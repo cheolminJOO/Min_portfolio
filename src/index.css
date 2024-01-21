@@ -43,7 +43,8 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: pointer;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/zoom.png'),
+    auto;
   transition: border-color 0.25s;
 }
 button:hover {

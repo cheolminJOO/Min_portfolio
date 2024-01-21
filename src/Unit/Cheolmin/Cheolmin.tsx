@@ -5,7 +5,7 @@ const Cheolmin = () => {
     <S.Container>
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> Who am I ? </S.FirstText>
+          <S.FirstText> 저는 ____ 하는 사람입니다. </S.FirstText>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>
@@ -13,8 +13,8 @@ const Cheolmin = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>01 </S.Numbering>
-              <S.TitleSpan>2022 ICH World Forum</S.TitleSpan>
-              <S.SubTitleSpan>2022 세계무형문화유산포럼 </S.SubTitleSpan>
+              <S.TitleSpan>"꾸준히"</S.TitleSpan>
+              <S.SubTitleSpan>평균 주 5회 TIL을 작성 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
@@ -38,7 +38,7 @@ const Cheolmin = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>02 </S.Numbering>
-              <S.TitleSpan>2022 ICH Youth Forum</S.TitleSpan>
+              <S.TitleSpan>"UX 관점에서 개발"</S.TitleSpan>
               <S.SubTitleSpan>2022 세계 청년포럼</S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -63,7 +63,7 @@ const Cheolmin = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
-              <S.TitleSpan>EPIS Intern</S.TitleSpan>
+              <S.TitleSpan>"다 같이 함께"</S.TitleSpan>
               <S.SubTitleSpan>컨텐츠 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -88,7 +88,7 @@ const Cheolmin = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>04 </S.Numbering>
-              <S.TitleSpan>KISTEP</S.TitleSpan>
+              <S.TitleSpan>"도전"</S.TitleSpan>
               <S.SubTitleSpan>컨텐츠 기획 및 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>

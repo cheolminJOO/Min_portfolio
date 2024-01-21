@@ -32,6 +32,7 @@ export default function Introduction() {
   return (
     <S.Container>
       <S.TextBox>
+        <S.SecondText>안녕하세요.</S.SecondText>
         <S.FirstLineTextBox>
           <S.HightLightText>{blogTitle}</S.HightLightText>
         </S.FirstLineTextBox>
