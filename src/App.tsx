@@ -3,6 +3,7 @@ import './App.css';
 
 import Dots from './Dots';
 import Introduction from './Unit/Introduce/Introduction';
+import Project from './Unit/Project/Project';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
@@ -104,7 +105,7 @@ function App() {
     <div ref={outerDivRef} className='outer'>
       <Dots currentPage={currentPage} />
       <Introduction />
-      <div className='divider'></div>
+      <Project/>
       <div className='inner bg-blue'>2</div>
       <div className='divider'></div>
       <div className='inner bg-pink'>3</div>
