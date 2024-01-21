@@ -108,6 +108,12 @@ export const SubTitleSpan = styled.span`
   font-weight: 400;
 `;
 
+export const ContentsText = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+`;
+
 export const CancelButton = styled.button`
   width: 242px;
   height: 60px;

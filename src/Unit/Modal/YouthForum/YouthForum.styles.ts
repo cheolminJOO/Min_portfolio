@@ -28,6 +28,12 @@ export const ModalContentDiv = styled.div`
   align-items: center;
 `;
 
+export const ContentsText = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+`;
+
 export const Div = styled.div`
   width: 100%;
   display: flex;

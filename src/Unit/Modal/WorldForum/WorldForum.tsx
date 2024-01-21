@@ -18,7 +18,17 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                 <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
               </S.TitleBoxDiv>
               <div>
-                <S.SubTitleSpan>기간 : 2022.03 ~ 2022.09</S.SubTitleSpan>
+                <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
+                <S.ContentsText>
+                  내용 : 2022 세계무형문화유산포럼 업무
+                </S.ContentsText>
+                <S.ContentsText>
+                  역할 1. 홈페이지 제작 업무 참여
+                      2. 포럼 
+                </S.ContentsText>
+                <S.ContentsText>
+                  성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
+                </S.ContentsText>
               </div>
             </S.ModalContentDiv>
           </S.ContainerDiv>

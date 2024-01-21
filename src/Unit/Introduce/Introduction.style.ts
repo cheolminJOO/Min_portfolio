@@ -25,6 +25,10 @@ export const FirstLineTextBox = styled.div`
   display: flex;
 `;
 
+export const BlankDiv = styled.div`
+  height: 75px;
+`;
+
 export const HightLightText = styled.div`
   font-size: 50px;
   font-weight: bolder;

@@ -9,9 +9,9 @@ const Dot: React.FC<Pages> = ({ num, currentPage }) => {
       style={{
         width: 10,
         height: 10,
-        border: '1px solid black',
+        border: '1px solid white',
         borderRadius: 999,
-        backgroundColor: currentPage === num ? 'black' : 'transparent',
+        backgroundColor: currentPage === num ? 'white' : 'transparent',
         transition: 'background-color 0.5s',
       }}
     ></div>

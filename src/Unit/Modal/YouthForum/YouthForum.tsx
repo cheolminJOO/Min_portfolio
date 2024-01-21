@@ -13,9 +13,16 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
           <S.ContainerDiv className='modal'>
             <S.ModalContentDiv>
               <S.TitleBoxDiv>
-                <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
+                <S.TitleSpan>ICH YOUTH FORUM</S.TitleSpan>
                 <S.SubTitleSpan>입력하신 내용이 모두 사라져요!</S.SubTitleSpan>
               </S.TitleBoxDiv>
+              <div>
+                <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
+                <S.ContentsText>
+                  내용 : ZEP에서 진행된 2022 YOUTH Forum의 맵 기획 및 운영
+                </S.ContentsText>
+                <S.ContentsText>성과 : 유네스코 1면 등재</S.ContentsText>
+              </div>
             </S.ModalContentDiv>
           </S.ContainerDiv>
         </S.Div>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Container = styled.div`
-  background-color: white;
+  background-color: black;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,6 +17,7 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid white;
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -32,7 +33,7 @@ export const HightLightText = styled.div`
 export const FirstText = styled.span`
   font-size: 50px;
   font-weight: bolder;
-  color: black;
+  color: white;
 `;
 
 export const SecondText = styled.div`
@@ -55,19 +56,19 @@ export const NineCloudGif = styled.img`
 
 export const Numbering = styled.div`
   font-size: 20px;
-  color: white;
+  color: black;
   font-weight: bolder;
 `;
 
 export const TitleSpan = styled.div`
   font-size: 20px;
-  color: white;
+  color: black;
   font-weight: bolder;
 `;
 
 export const SubTitleSpan = styled.div`
   font-size: 17px;
-  color: white;
+  color: black;
   font-weight: bolder;
 `;
 
@@ -75,7 +76,7 @@ export const ProjectBoxDiv = styled(motion.div)`
   margin: 3rem;
   width: 360px;
   cursor: pointer;
-  background-color: black;
+  background-color: white;
   border-radius: 40px;
 `;
 
@@ -88,13 +89,14 @@ export const TitleAndNumberBox = styled.div`
 export const TitleAndNumber = styled.div``;
 
 export const GithubImg = styled(motion.img)`
-  width: 60px;
+  width: 50px;
   height: 50px;
 `;
 
 export const YoutubeImg = styled(motion.img)`
   width: 50px;
   height: 50px;
+  margin-right: 15px;
 `;
 
 export const ProjectImg = styled(motion.img)``;
