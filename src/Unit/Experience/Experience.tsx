@@ -77,8 +77,8 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
-              <S.TitleSpan>INSTAGRAM(CLONE)</S.TitleSpan>
-              <S.SubTitleSpan>인스타그램 클론 사이트 </S.SubTitleSpan>
+              <S.TitleSpan>EPIS Intern</S.TitleSpan>
+              <S.SubTitleSpan>컨텐츠 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
@@ -91,7 +91,7 @@ const Experience = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/insta.png'
+              src='/EPIS.png'
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -102,8 +102,8 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>04 </S.Numbering>
-              <S.TitleSpan>Portfoilo</S.TitleSpan>
-              <S.SubTitleSpan>포트폴리오 사이트 </S.SubTitleSpan>
+              <S.TitleSpan>KISTEP</S.TitleSpan>
+              <S.SubTitleSpan>컨텐츠 기획 및 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
@@ -115,7 +115,7 @@ const Experience = () => {
             </div>
           </S.TitleAndNumberBox>
           <div>
-            <img src='/insta.png' alt='instagram logo' />
+            <img src='/KISTEP.png' alt='instagram logo' />
           </div>
         </S.ProjectBoxDiv>
         <div></div>
