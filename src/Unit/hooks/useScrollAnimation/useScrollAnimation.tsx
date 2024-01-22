@@ -4,6 +4,9 @@ export const useScrollAnimation = () => {
   const [isInViewport, setIsInViewport] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
+
+  
+
   useEffect(() => {
     if (!ref.current) return; // 요소가 아직 준비되지 않은 경우 중단
 

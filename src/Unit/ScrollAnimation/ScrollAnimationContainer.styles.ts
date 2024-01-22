@@ -21,6 +21,6 @@ export const Container = styled.div`
   height: 3rem;
 
   &.frame-in {
-    animation: ${frameInAnimation} 2s forwards;
+    animation: ${frameInAnimation} 1s forwards;
   }
 `;

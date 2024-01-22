@@ -11,6 +11,43 @@ const Cheolmin = () => {
   const [isSecondImage, setIsSecondImage] = useState(false);
   const [isThirdImage, setIsThirdImage] = useState(false);
   const [isFourthImage, setIsFourthImage] = useState(false);
+
+  const [isHovered, setIsHovered] = useState(false);
+  const [isSecondHovered, setIsSecondHovered] = useState(false);
+  const [isThirdHovered, setIsThirdHovered] = useState(false);
+  const [isFourthHovered, setIsFourthHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsSecondHovered(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsSecondHovered(false);
+  };
+
+  const handleMouseEnter3 = () => {
+    setIsThirdHovered(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setIsThirdHovered(false);
+  };
+
+  const handleMouseEnter4 = () => {
+    setIsFourthHovered(true);
+  };
+
+  const handleMouseLeave4 = () => {
+    setIsFourthHovered(false);
+  };
   const onClickChrome = () => {
     window.open(
       'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',
@@ -55,19 +92,21 @@ const Cheolmin = () => {
               <S.TitleSpan>"꾸준히"</S.TitleSpan>
               <S.SubTitleSpan>평균 주 5회 TIL을 작성 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
+            {/* <div>
               <S.YoutubeImg
                 src='/chrome.png'
                 alt='크롬 로고 '
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
               />
-            </div>
+            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
               onClick={onClickFirstImg}
-              src='/velog.png'
+              src={isHovered ? '/velog.png' : '/BVelog.png'}
               alt='포럼'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -81,7 +120,7 @@ const Cheolmin = () => {
               <S.TitleSpan>"UX 관점에서 개발"</S.TitleSpan>
               <S.SubTitleSpan>구글폼을 통해 사용자 테스트 진행</S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
+            {/* <div>
               <S.YoutubeImg
                 onClick={onClickChrome}
                 src='/chrome.png'
@@ -89,12 +128,14 @@ const Cheolmin = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
               />
-            </div>
+            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
               onClick={onClickSecondImg}
-              src='/userTest.png'
+              src={isSecondHovered ? '/userTest.png' : '/BlackUserTest.png'}
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -108,19 +149,21 @@ const Cheolmin = () => {
               <S.TitleSpan>"다 같이 함께"</S.TitleSpan>
               <S.SubTitleSpan>42일, 6명의 멤버, 1등 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
+            {/* <div>
               <S.YoutubeImg
                 src='/youtubeLogo.png'
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
               />
-            </div>
+            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3}
               onClick={onClickThirdImg}
-              src='/OneTeam.png'
+              src={isThirdHovered ? '/OneTeam.png' : '/BlackOneTeam.png'}
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -134,19 +177,21 @@ const Cheolmin = () => {
               <S.TitleSpan>"도전"</S.TitleSpan>
               <S.SubTitleSpan>익숙한 것 보다 새로운 것 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
+            {/* <div>
               <S.YoutubeImg
                 src='/youtubeLogo.png'
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
               />
-            </div>
+            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onMouseEnter={handleMouseEnter4}
+              onMouseLeave={handleMouseLeave4}
               onClick={onClickFourthImg}
-              src='/KISTEP.png'
+              src={isFourthHovered ? '/KISTEP.png' : '/BKISTEP.png'}
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}

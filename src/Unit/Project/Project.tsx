@@ -1,7 +1,45 @@
+import { useState } from 'react';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import * as S from './Project.styles';
 
 const Project = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isSecondHovered, setIsSecondHovered] = useState(false);
+  const [isThirdHovered, setIsThirdHovered] = useState(false);
+  const [isFourthHovered, setIsFourthHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsSecondHovered(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsSecondHovered(false);
+  };
+
+  const handleMouseEnter3 = () => {
+    setIsThirdHovered(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setIsThirdHovered(false);
+  };
+
+  const handleMouseEnter4 = () => {
+    setIsFourthHovered(true);
+  };
+
+  const handleMouseLeave4 = () => {
+    setIsFourthHovered(false);
+  };
+
   const onClickFirstGithub = () => {
     window.open('https://github.com/final-project-hh99/front', '_blank');
   };
@@ -43,7 +81,7 @@ const Project = () => {
               <S.SubTitleSpan>AI 솔루션 감정 일기 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
-              <S.GithubImg
+              {/* <S.GithubImg
                 onClick={onClickFirstGithub}
                 src='/git.png'
                 alt='깃허브'
@@ -56,12 +94,14 @@ const Project = () => {
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
-              />
+              /> */}
             </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/nine-cloud.png'
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              src={isHovered ? '/nine-cloud.png' : '/NineCloudBlack.png'}
               alt='나인클라우드'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -76,7 +116,7 @@ const Project = () => {
               <S.SubTitleSpan>중고상품 커뮤니티</S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
-              <S.GithubImg
+              {/* <S.GithubImg
                 onClick={onClickSecondGithub}
                 src='/git.png'
                 alt='깃허브'
@@ -88,12 +128,14 @@ const Project = () => {
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
-              />
+              /> */}
             </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/BUSU.png'
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+              src={isSecondHovered ? '/BUSU.png' : '/BlackBUSU.png'}
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -108,7 +150,7 @@ const Project = () => {
               <S.SubTitleSpan>인스타그램 클론 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
-              <S.GithubImg
+              {/* <S.GithubImg
                 onClick={onCLickThirdGithub}
                 src='/git.png'
                 alt='깃허브'
@@ -120,12 +162,14 @@ const Project = () => {
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
-              />
+              /> */}
             </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/insta.png'
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3}
+              src={isThirdHovered ? '/insta.png' : '/BlackInsta.png'}
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -140,7 +184,7 @@ const Project = () => {
               <S.SubTitleSpan>포트폴리오 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
-              <S.GithubImg
+              {/* <S.GithubImg
                 onClick={onClickFourthGithub}
                 src='/git.png'
                 alt='깃허브'
@@ -152,11 +196,18 @@ const Project = () => {
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
-              />
+              /> */}
             </div>
           </S.TitleAndNumberBox>
           <div>
-            <img src='/insta.png' alt='instagram logo' />
+            <S.ProjectImg
+              src={isFourthHovered ? '/insta.png' : '/BlackInsta.png'}
+              alt='instagram logo'
+              onMouseEnter={handleMouseEnter4}
+              onMouseLeave={handleMouseLeave4}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            />
           </div>
         </S.ProjectBoxDiv>
         <div></div>

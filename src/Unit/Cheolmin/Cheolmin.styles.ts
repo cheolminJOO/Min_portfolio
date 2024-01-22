@@ -6,7 +6,7 @@ const floatingAnimation = keyframes`
     transform: translate(0%,0%);
   }
   50% {
-    transform: translate(0%, -5%);
+    transform: translate(0%, 3%);
   }
   100% {
     transform: translate(0%,0%);
@@ -90,9 +90,6 @@ export const ProjectBoxDiv = styled(motion.div)`
   width: 360px;
   background-color: white;
   border-radius: 40px;
-  &:hover {
-    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
-  }
 `;
 
 export const TitleAndNumberBox = styled.div`
@@ -101,7 +98,13 @@ export const TitleAndNumberBox = styled.div`
   justify-content: space-between;
 `;
 
-export const TitleAndNumber = styled.div``;
+export const TitleAndNumber = styled.div`
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const GithubImg = styled(motion.img)`
   width: 60px;
@@ -118,6 +121,10 @@ export const YoutubeImg = styled(motion.img)`
 `;
 
 export const ProjectImg = styled(motion.img)`
+  &:hover {
+    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
+  }
+
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
     auto;
 `;

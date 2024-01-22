@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/mouse+(1).png'),
+    auto;
 }
 
 h1 {
@@ -60,6 +62,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  :overlay-root {
+    cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/mouse+(1).png'),
+      auto;
+  }
+
   a:hover {
     color: #747bff;
   }
