@@ -1,6 +1,16 @@
+import { useState } from 'react';
 import * as S from './Cheolmin.styles';
+import Velog from '../Modal/Velog/Velog';
+import UserTest from '../Modal/UserTest/UserTest';
+import Together from '../Modal/Together/Together';
+import Challenge from '../Modal/Challenge/Challenge';
+import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 
 const Cheolmin = () => {
+  const [isFirstImage, setIsFirstImage] = useState(false);
+  const [isSecondImage, setIsSecondImage] = useState(false);
+  const [isThirdImage, setIsThirdImage] = useState(false);
+  const [isFourthImage, setIsFourthImage] = useState(false);
   const onClickChrome = () => {
     window.open(
       'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',
@@ -8,11 +18,33 @@ const Cheolmin = () => {
     );
   };
 
+  const onClickFirstImg = () => {
+    setIsFirstImage((prev) => !prev);
+  };
+
+  const onClickSecondImg = () => {
+    setIsSecondImage((prev) => !prev);
+  };
+
+  const onClickThirdImg = () => {
+    setIsThirdImage((prev) => !prev);
+  };
+
+  const onClickFourthImg = () => {
+    setIsFourthImage((prev) => !prev);
+  };
+
   return (
     <S.Container>
+      {isFirstImage && <Velog onCloseModal={onClickFirstImg} />}
+      {isSecondImage && <UserTest onCloseModal={onClickSecondImg} />}
+      {isThirdImage && <Together onCloseModal={onClickThirdImg} />}
+      {isFourthImage && <Challenge onCloseModal={onClickFourthImg} />}
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> 저는 ____ 하는 사람입니다. </S.FirstText>
+          <ScrollAnimationContainer>
+            <S.FirstText> 저는 ____ 하는 사람입니다. </S.FirstText>
+          </ScrollAnimationContainer>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>
@@ -34,6 +66,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickFirstImg}
               src='/velog.png'
               alt='포럼'
               whileHover={{ scale: 1.05 }}
@@ -60,6 +93,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickSecondImg}
               src='/userTest.png'
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
@@ -85,6 +119,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickThirdImg}
               src='/OneTeam.png'
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
@@ -97,7 +132,7 @@ const Cheolmin = () => {
             <S.TitleAndNumber>
               <S.Numbering>04 </S.Numbering>
               <S.TitleSpan>"도전"</S.TitleSpan>
-              <S.SubTitleSpan>컨텐츠 기획 및 제작 </S.SubTitleSpan>
+              <S.SubTitleSpan>익숙한 것 보다 새로운 것 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
@@ -109,7 +144,13 @@ const Cheolmin = () => {
             </div>
           </S.TitleAndNumberBox>
           <div>
-            <img src='/KISTEP.png' alt='instagram logo' />
+            <S.ProjectImg
+              onClick={onClickFourthImg}
+              src='/KISTEP.png'
+              alt='instagram logo'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
+            />
           </div>
         </S.ProjectBoxDiv>
         <div></div>

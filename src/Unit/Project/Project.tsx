@@ -1,3 +1,4 @@
+import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import * as S from './Project.styles';
 
 const Project = () => {
@@ -28,7 +29,9 @@ const Project = () => {
     <S.Container>
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> 저는 ____를 만들었습니다.</S.FirstText>
+          <ScrollAnimationContainer>
+            <S.FirstText> 저는 ____를 만들었습니다.</S.FirstText>
+          </ScrollAnimationContainer>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>

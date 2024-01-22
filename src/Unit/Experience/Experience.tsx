@@ -4,6 +4,7 @@ import WorldForum from '../Modal/WorldForum/WorldForum';
 import YouthForum from '../Modal/YouthForum/YouthForum';
 import Kistep from '../Modal/KISTEP/Kistep';
 import Epis from '../Modal/EPIS/Epis';
+import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 
 const Experience = () => {
   const [isWorldForum, setIsWorldForum] = useState(false);
@@ -45,7 +46,8 @@ const Experience = () => {
       {isEpis && <Epis onCloseModal={onClickThirdImg} />}
       <S.TextBox>
         <S.FirstLineTextBox>
-          <S.FirstText> 저는 ____를 경험 했습니다. </S.FirstText>
+          <S.TextStyle> 저는 ____를 </S.TextStyle>
+          <S.FirstText> 경험 </S.FirstText> <S.TextStyle>했습니다.</S.TextStyle>
         </S.FirstLineTextBox>
       </S.TextBox>
       <S.ProjectBox>

@@ -1,5 +1,54 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
+
+const floatingAnimation = keyframes`
+  0% {
+    transform: translate(0%,0%);
+  }
+  50% {
+    transform: translate(0%, -5%);
+  }
+  100% {
+    transform: translate(0%,0%);
+  }
+`;
+
+const crumbleAnimation = keyframes`
+  0% {
+    transform: rotateY(20deg);
+  }
+  100% {
+    transform: rotateY(-20deg);
+  }
+`;
+const scaleAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
+const frameInAnimation = keyframes`
+  0% {
+
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(0%);
+
+  }
+
+  100%{
+
+    transform: translateY(-20%);
+  }
+`;
 
 export const Container = styled.div`
   background-color: black;
@@ -17,6 +66,7 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 2px solid white;
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -31,10 +81,18 @@ export const HightLightText = styled.div`
   color: red;
 `;
 
-export const FirstText = styled.span`
+export const TextStyle = styled.span`
   font-size: 50px;
   font-weight: bolder;
   color: white;
+`;
+
+export const FirstText = styled.span`
+  font-size: 50px;
+  font-weight: bolder;
+  color: skyblue;
+  margin: 0px 1.5rem;
+  animation: ${frameInAnimation} 3s ease-in-out infinite;
 `;
 
 export const SecondText = styled.div`
@@ -46,7 +104,6 @@ export const SecondText = styled.div`
 export const ProjectBox = styled.div`
   width: 100vw;
   height: 70%;
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
 `;
@@ -79,6 +136,9 @@ export const ProjectBoxDiv = styled(motion.div)`
   border: 1px solid white;
   background-color: white;
   border-radius: 40px;
+  &:hover {
+    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
+  }
 `;
 
 export const TitleAndNumberBox = styled.div`

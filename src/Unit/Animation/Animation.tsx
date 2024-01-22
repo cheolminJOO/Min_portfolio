@@ -12,7 +12,7 @@ const Animation1: React.FC<{ children: React.ReactNode }> = ({
       initial='initial'
       animate='in'
       exit='out'
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.3 }}
       variants={pageEffect}
       {...rest}
     >

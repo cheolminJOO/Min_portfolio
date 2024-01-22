@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as S from './Introduction.style';
+import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 
 export default function Introduction() {
   const completionWord = '부딪히는_';
@@ -34,9 +35,10 @@ export default function Introduction() {
       <S.TextBox>
         <S.SecondText>안녕하세요.</S.SecondText>
         <S.FirstLineTextBox>
-          <S.HightLightText>{blogTitle}</S.HightLightText>
+          <ScrollAnimationContainer>
+            <S.HightLightText>부딪히는</S.HightLightText>
+          </ScrollAnimationContainer>
         </S.FirstLineTextBox>
-        {!blogTitle && <S.BlankDiv></S.BlankDiv>}
         <S.SecondText>개발자 주철민 입니다.</S.SecondText>
       </S.TextBox>
       <S.ProfileImg src='/cheolmin.png' alt='프로필이미지' />

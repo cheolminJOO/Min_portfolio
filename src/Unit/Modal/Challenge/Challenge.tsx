@@ -1,13 +1,13 @@
 import React from 'react';
-import * as S from './WorldForum.styles';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
+import * as S from './Challenge.styles';
 
 interface CloseModal {
   onCloseModal: () => void;
 }
 
-const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
+const Challenge: React.FC<CloseModal> = ({ onCloseModal }) => {
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -40,4 +40,4 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
   );
 };
 
-export default WorldForum;
+export default Challenge;

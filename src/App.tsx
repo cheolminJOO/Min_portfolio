@@ -84,7 +84,7 @@ function App() {
           // 현재 4페이지
           console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
-            top: pageHeight * 2 + DIVIDER_HEIGHT,
+            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
             left: 0,
             behavior: 'smooth',
           });
@@ -120,7 +120,6 @@ function App() {
       <Project />
       <Experience />
       <Cheolmin />
-      <div className='inner bg-pink'>3</div>
     </div>
   );
 }

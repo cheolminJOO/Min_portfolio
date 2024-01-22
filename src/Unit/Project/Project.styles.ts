@@ -1,5 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
+
+const floatingAnimation = keyframes`
+  0% {
+    transform: translate(0%,0%);
+  }
+  50% {
+    transform: translate(0%, -5%);
+  }
+  100% {
+    transform: translate(0%,0%);
+  }
+`;
 
 export const Container = styled.div`
   background-color: black;
@@ -17,7 +29,7 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid white;
+  border: 2px solid white;
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -46,7 +58,7 @@ export const SecondText = styled.div`
 
 export const ProjectBox = styled.div`
   width: 100vw;
-  height: 70%;
+  flex: 70%;
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +91,9 @@ export const ProjectBoxDiv = styled(motion.div)`
   width: 360px;
   background-color: white;
   border-radius: 40px;
+  &:hover {
+    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
+  }
 `;
 
 export const TitleAndNumberBox = styled.div`
