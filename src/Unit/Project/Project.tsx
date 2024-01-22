@@ -40,28 +40,28 @@ const Project = () => {
     setIsFourthHovered(false);
   };
 
-  const onClickFirstGithub = () => {
-    window.open('https://github.com/final-project-hh99/front', '_blank');
-  };
+  // const onClickFirstGithub = () => {
+  //   window.open('https://github.com/final-project-hh99/front', '_blank');
+  // };
 
-  const onClickFirstYoutube = () => {
-    window.open('https://www.youtube.com/watch?v=Ha4b-zM9gzc', '_blank');
-  };
+  // const onClickFirstYoutube = () => {
+  //   window.open('https://www.youtube.com/watch?v=Ha4b-zM9gzc', '_blank');
+  // };
 
-  const onClickSecondGithub = () => {
-    window.open(
-      'https://github.com/cheolminJOO/Buying-and-Selling-Used-Stuff',
-      '_blank'
-    );
-  };
+  // const onClickSecondGithub = () => {
+  //   window.open(
+  //     'https://github.com/cheolminJOO/Buying-and-Selling-Used-Stuff',
+  //     '_blank'
+  //   );
+  // };
 
-  const onCLickThirdGithub = () => {
-    window.open('https://github.com/insta-clone-hh99/front', '_blank');
-  };
+  // const onCLickThirdGithub = () => {
+  //   window.open('https://github.com/insta-clone-hh99/front', '_blank');
+  // };
 
-  const onClickFourthGithub = () => {
-    window.open('https://github.com/cheolminJOO/Min_portfolio', '_blank');
-  };
+  // const onClickFourthGithub = () => {
+  //   window.open('https://github.com/cheolminJOO/Min_portfolio', '_blank');
+  // };
 
   return (
     <S.Container>

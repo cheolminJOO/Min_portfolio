@@ -15,6 +15,7 @@ const UserTest: React.FC<CloseModal> = ({ onCloseModal }) => {
     );
   };
 
+
   const onClickSurveyBtn = () => {
     window.open(
       'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',

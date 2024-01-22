@@ -6,6 +6,11 @@ interface CloseModal {
 }
 
 const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
+
+  const onClickSecondChrome = () => {
+    window.open('https://zep.us/play/2mYqBe', '_blank');
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -23,6 +28,7 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                 </S.ContentsText>
                 <S.ContentsText>성과 : 유네스코 1면 등재</S.ContentsText>
               </div>
+              <button onClick={onClickSecondChrome}>이동</button>
             </S.ModalContentDiv>
           </S.ContainerDiv>
         </S.Div>

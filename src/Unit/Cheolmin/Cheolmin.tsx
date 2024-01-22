@@ -48,12 +48,6 @@ const Cheolmin = () => {
   const handleMouseLeave4 = () => {
     setIsFourthHovered(false);
   };
-  const onClickChrome = () => {
-    window.open(
-      'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',
-      '_blank'
-    );
-  };
 
   const onClickFirstImg = () => {
     setIsFirstImage((prev) => !prev);

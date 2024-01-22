@@ -47,12 +47,6 @@ const Experience = () => {
     setIsFourthHovered(false);
   };
 
-  const onClickChrome = () => {
-    window.open(
-      'https://ichworldforum.org/2022-%ec%84%b8%ea%b3%84%eb%ac%b4%ed%98%95%eb%ac%b8%ed%99%94%ec%9c%a0%ec%82%b0%ed%8f%ac%eb%9f%bc?lang=ko',
-      '_blank'
-    );
-  };
 
   const onClickFirstImg = () => {
     setIsWorldForum((prev) => !prev);
@@ -70,9 +64,6 @@ const Experience = () => {
     setIsKistep((prev) => !prev);
   };
 
-  const onClickSecondChrome = () => {
-    window.open('https://zep.us/play/2mYqBe', '_blank');
-  };
 
   return (
     <S.Container>
