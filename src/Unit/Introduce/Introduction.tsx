@@ -15,6 +15,7 @@ export default function Introduction() {
           ? prevTitleValue + completionWord[count]
           : completionWord[0];
         setCount(count + 1);
+        console.log(blogTitle);
 
         if (count >= completionWord.length) {
           setCount(0);
