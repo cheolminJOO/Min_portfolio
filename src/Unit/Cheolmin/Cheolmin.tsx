@@ -1,6 +1,13 @@
 import * as S from './Cheolmin.styles';
 
 const Cheolmin = () => {
+  const onClickChrome = () => {
+    window.open(
+      'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',
+      '_blank'
+    );
+  };
+
   return (
     <S.Container>
       <S.TextBox>
@@ -27,7 +34,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/ICHWORLDFORUM.png'
+              src='/velog.png'
               alt='포럼'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -39,10 +46,11 @@ const Cheolmin = () => {
             <S.TitleAndNumber>
               <S.Numbering>02 </S.Numbering>
               <S.TitleSpan>"UX 관점에서 개발"</S.TitleSpan>
-              <S.SubTitleSpan>2022 세계 청년포럼</S.SubTitleSpan>
+              <S.SubTitleSpan>구글폼을 통해 사용자 테스트 진행</S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
+                onClick={onClickChrome}
                 src='/chrome.png'
                 alt='유튜브 로고'
                 whileHover={{ scale: 1.1 }}
@@ -52,7 +60,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/ICHYOUTHFORUM.png'
+              src='/userTest.png'
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -64,7 +72,7 @@ const Cheolmin = () => {
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
               <S.TitleSpan>"다 같이 함께"</S.TitleSpan>
-              <S.SubTitleSpan>컨텐츠 제작 </S.SubTitleSpan>
+              <S.SubTitleSpan>42일, 6명의 멤버, 1등 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
               <S.YoutubeImg
@@ -77,7 +85,7 @@ const Cheolmin = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
-              src='/EPIS.png'
+              src='/OneTeam.png'
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
