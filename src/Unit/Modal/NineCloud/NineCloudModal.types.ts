@@ -1,3 +1,3 @@
 export interface IOnClose {
-  onClose : () => void;
+  onCloseModal: () => void;
 }

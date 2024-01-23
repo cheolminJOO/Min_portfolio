@@ -1,12 +1,36 @@
 import { useState } from 'react';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import * as S from './Project.styles';
+import NineCloudModal from '../Modal/NineCloud/NineCloudModal';
+import BUSU from '../Modal/BUSU/BUSU';
+import Instagram from '../Modal/Instagram/Instagram';
+import Portfolio from '../Modal/Portfolio/Portfoilo';
 
 const Project = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isSecondHovered, setIsSecondHovered] = useState(false);
   const [isThirdHovered, setIsThirdHovered] = useState(false);
   const [isFourthHovered, setIsFourthHovered] = useState(false);
+  const [isFirstImage, setIsFirstImage] = useState(false);
+  const [isSecondImage, setIsSecondImage] = useState(false);
+  const [isThirdImage, setIsThirdImage] = useState(false);
+  const [isFourthImage, setIsFourthImage] = useState(false);
+
+  const onClickFirstImg = () => {
+    setIsFirstImage((prev) => !prev);
+  };
+
+  const onClickSecondImg = () => {
+    setIsSecondImage((prev) => !prev);
+  };
+
+  const onClickThirdImg = () => {
+    setIsThirdImage((prev) => !prev);
+  };
+
+  const onClickFourthImg = () => {
+    setIsFourthImage((prev) => !prev);
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -40,31 +64,12 @@ const Project = () => {
     setIsFourthHovered(false);
   };
 
-  // const onClickFirstGithub = () => {
-  //   window.open('https://github.com/final-project-hh99/front', '_blank');
-  // };
-
-  // const onClickFirstYoutube = () => {
-  //   window.open('https://www.youtube.com/watch?v=Ha4b-zM9gzc', '_blank');
-  // };
-
-  // const onClickSecondGithub = () => {
-  //   window.open(
-  //     'https://github.com/cheolminJOO/Buying-and-Selling-Used-Stuff',
-  //     '_blank'
-  //   );
-  // };
-
-  // const onCLickThirdGithub = () => {
-  //   window.open('https://github.com/insta-clone-hh99/front', '_blank');
-  // };
-
-  // const onClickFourthGithub = () => {
-  //   window.open('https://github.com/cheolminJOO/Min_portfolio', '_blank');
-  // };
-
   return (
     <S.Container>
+      {isFirstImage && <NineCloudModal onCloseModal={onClickFirstImg} />}
+      {isSecondImage && <BUSU onCloseModal={onClickSecondImg} />}
+      {isThirdImage && <Instagram onCloseModal={onClickThirdImg} />}
+      {isFourthImage && <Portfolio onCloseModal={onClickFourthImg} />}
       <S.TextBox>
         <S.FirstLineTextBox>
           <ScrollAnimationContainer>
@@ -80,25 +85,10 @@ const Project = () => {
               <S.TitleSpan>Nine Cloud</S.TitleSpan>
               <S.SubTitleSpan>AI 솔루션 감정 일기 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.GithubImg
-                onClick={onClickFirstGithub}
-                src='/git.png'
-                alt='깃허브'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-              <S.YoutubeImg
-                onClick={onClickFirstYoutube}
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickFirstImg}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               src={isHovered ? '/nine-cloud.png' : '/NineCloudBlack.png'}
@@ -133,6 +123,7 @@ const Project = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickSecondImg}
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
               src={isSecondHovered ? '/BUSU.png' : '/BlackBUSU.png'}
@@ -167,6 +158,7 @@ const Project = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickThirdImg}
               onMouseEnter={handleMouseEnter3}
               onMouseLeave={handleMouseLeave3}
               src={isThirdHovered ? '/insta.png' : '/BlackInsta.png'}
@@ -201,6 +193,7 @@ const Project = () => {
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
+              onClick={onClickFourthImg}
               src={isFourthHovered ? '/insta.png' : '/BlackInsta.png'}
               alt='instagram logo'
               onMouseEnter={handleMouseEnter4}

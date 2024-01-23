@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './WorldForum.styles';
+import * as S from './Instagram.styles';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
 
@@ -7,14 +7,10 @@ interface CloseModal {
   onCloseModal: () => void;
 }
 
-const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
-  const onClickChrome = () => {
-    window.open(
-      'https://ichworldforum.org/2022-%ec%84%b8%ea%b3%84%eb%ac%b4%ed%98%95%eb%ac%b8%ed%99%94%ec%9c%a0%ec%82%b0%ed%8f%ac%eb%9f%bc?lang=ko',
-      '_blank'
-    );
+const Instagram: React.FC<CloseModal> = ({ onCloseModal }) => {
+  const onCLickThirdGithub = () => {
+    window.open('https://github.com/insta-clone-hh99/front', '_blank');
   };
-
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -24,7 +20,7 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
                   <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>포럼 홈페이지 제작 업무 참여</S.SubTitleSpan>
+                  <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
@@ -38,7 +34,6 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                     성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
                   </S.ContentsText>
                 </div>
-                <button onClick={onClickChrome}>이동</button>
               </S.ModalContentDiv>
             </Animation1>
           </S.ContainerDiv>
@@ -48,4 +43,4 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
   );
 };
 
-export default WorldForum;
+export default Instagram;

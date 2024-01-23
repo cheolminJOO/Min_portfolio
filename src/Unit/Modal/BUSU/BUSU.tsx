@@ -1,17 +1,20 @@
-import Animation2 from '../../Animation/Animation2';
+import React from 'react';
+import * as S from './BUSU.styles';
 import Portal from '../../Portal/Portal';
-import * as S from './NineCloudModal.styles';
-import { IOnClose } from './NineCloudModal.types';
+import Animation1 from '../../Animation/Animation';
+import Animation2 from '../../Animation/Animation2';
 
-const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
+interface CloseModal {
+  onCloseModal: () => void;
+}
+
+const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
   const onClickGithub = () => {
-    window.open('https://github.com/final-project-hh99/front', '_blank');
+    window.open(
+      'https://github.com/cheolminJOO/Buying-and-Selling-Used-Stuff',
+      '_blank'
+    );
   };
-
-  const onClickYoutube = () => {
-    window.open('https://www.youtube.com/watch?v=Ha4b-zM9gzc', '_blank');
-  };
-
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -20,15 +23,13 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
             <Animation2>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>Nine Cloud</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    AI 솔루션 감정일기 클라우드 서비스
-                  </S.SubTitleSpan>
+                  <S.TitleSpan>BUSU</S.TitleSpan>
+                  <S.SubTitleSpan>중고매매 커뮤니티 서비스</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2023.12 ~ 2024.01</S.ContentsText>
+                  <S.ContentsText>기간 : 2023.08 ~ 진행중</S.ContentsText>
                   <S.ContentsText>
-                    Tech Stack : React, Styled-Components, Recoil
+                    Tech Stack : Next.js, Styled.Components, Recoil
                   </S.ContentsText>
                   <S.ContentsText>
                     역할 1. 홈페이지 제작 업무 참여 2. 포럼
@@ -46,7 +47,7 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
                     whileTap={{ scale: 1 }}
                   />
                   <S.YoutubeImg
-                    onClick={onClickYoutube}
+                    onClick={onClickGithub}
                     src='/youtubeLogo.png'
                     alt='유튜브 로고'
                     whileHover={{ scale: 1.1 }}
@@ -62,4 +63,4 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
   );
 };
 
-export default NineCloudModal;
+export default BUSU;

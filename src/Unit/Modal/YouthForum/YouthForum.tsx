@@ -6,7 +6,6 @@ interface CloseModal {
 }
 
 const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
-
   const onClickSecondChrome = () => {
     window.open('https://zep.us/play/2mYqBe', '_blank');
   };
@@ -24,7 +23,10 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
               <div>
                 <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
                 <S.ContentsText>
-                  내용 : ZEP에서 진행된 2022 YOUTH Forum의 맵 기획 및 운영
+                  내용 : 2022 YOUTH Forum 업무
+                </S.ContentsText>
+                <S.ContentsText>
+                  역할 : ZEP 맵 기획과 운영 및 프로그램 진행
                 </S.ContentsText>
                 <S.ContentsText>성과 : 유네스코 1면 등재</S.ContentsText>
               </div>
