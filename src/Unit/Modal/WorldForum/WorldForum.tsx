@@ -2,6 +2,8 @@ import React from 'react';
 import * as S from './WorldForum.styles';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
+import Animation2 from '../../Animation/Animation2';
+import Animation3 from '../../Animation/Animation3';
 
 interface CloseModal {
   onCloseModal: () => void;
@@ -20,7 +22,7 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
-            <Animation1>
+            <Animation3>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
                   <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
@@ -42,7 +44,7 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                 </div>
                 <button onClick={onClickChrome}>이동</button>
               </S.ModalContentDiv>
-            </Animation1>
+            </Animation3>
           </S.ContainerDiv>
         </S.Div>
       </S.ContainerDiv>

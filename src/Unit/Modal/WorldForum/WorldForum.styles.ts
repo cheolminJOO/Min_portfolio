@@ -20,11 +20,10 @@ export const ContainerDiv = styled.div`
 export const ModalContentDiv = styled.div`
   width: 500px;
   height: 500px;
-  border-radius: 40px;
   background: #fff;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 100px;
   align-items: center;
   justify-content: space-between;
 `;
@@ -106,13 +105,13 @@ export const TitleSpan = styled.span`
 export const SubTitleSpan = styled.span`
   color: #646464;
   font-size: 17.063px;
-  font-weight: 400;
+  font-weight: bolder;
 `;
 
 export const ContentsText = styled.div`
   color: #646464;
   font-size: 17.063px;
-  font-weight: 400;
+  font-weight: bolder;
   margin-top: 10px; /* 위쪽 여백 추가 */
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;

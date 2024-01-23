@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './BUSU.styles';
 import Portal from '../../Portal/Portal';
-import Animation1 from '../../Animation/Animation';
 import Animation2 from '../../Animation/Animation2';
 
 interface CloseModal {

@@ -1,7 +1,7 @@
 export const moveEffect = {
   initial: {
     y: -300,
-    opacity: 0,
+    opacity: 1,
   },
   in: {
     y: 0,
@@ -9,24 +9,25 @@ export const moveEffect = {
   },
   out: {
     y: 100,
-    opacity: 0,
+    opacity: 1,
   },
 };
 
 export const pageEffect = {
   initial: {
-    scale: 0.8,
+    rotate: 180,
     opacity: 1,
-    y: -500,
+    x: 300,
   },
   in: {
-    scale: 1,
+    rotate: -10,
     opacity: 1,
-    y: 0,
+    x: -150,
   },
   out: {
-    scale: 1.2,
-    opacity: 0,
+    rotate: -90,
+    opacity: 1,
+    x: 0,
   },
 };
 
