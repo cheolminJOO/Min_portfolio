@@ -7,19 +7,12 @@ import BUSU from '../Modal/BUSU/BUSU';
 import Instagram from '../Modal/Instagram/Instagram';
 import Portfolio from '../Modal/Portfolio/Portfoilo';
 import Animation3 from '../Animation/Animation3';
-import Fireworks from 'react-canvas-confetti/dist/presets/fireworks';
 
 interface IProps {
   isActiveFireWork: boolean;
   setIsActiveFireWork: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const canvasStyles: React.CSSProperties = {
-  position: 'fixed',
-  width: '100vw',
-  height: '100vh',
-  zIndex: '3',
-};
 
 const Contact: React.FC<IProps> = ({
   isActiveFireWork,
@@ -29,19 +22,7 @@ const Contact: React.FC<IProps> = ({
   const [isSecondImage, setIsSecondImage] = useState(false);
   const [isThirdImage, setIsThirdImage] = useState(false);
   const [isFourthImage, setIsFourthImage] = useState(false);
-  const decorateOptions = (originalOptions: any) => {
-    return {
-      ...originalOptions,
-      particleCount: 100,
-      spread: 180,
-      startVelocity: 50,
-      angle: -90,
-      ticks: 200,
-      origin: { x: 0.5, y: 0 },
-      shapes: ['circle', 'circle', 'square'],
-      gravity: 0.5,
-    };
-  };
+  
 
   useEffect(() => {
     if (isActiveFireWork) {

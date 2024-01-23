@@ -16,10 +16,7 @@ const canvasStyles: React.CSSProperties = {
   zIndex: '3',
 };
 
-const Introduction: React.FC<IProps> = ({
-  isActiveFireWork,
-  setIsActiveFireWork,
-}) => {
+const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
   const decorateOptions = (originalOptions: any) => {
     return {
       ...originalOptions,
