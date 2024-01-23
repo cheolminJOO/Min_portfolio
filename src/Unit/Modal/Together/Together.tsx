@@ -8,6 +8,12 @@ interface CloseModal {
 }
 
 const Together: React.FC<CloseModal> = ({ onCloseModal }) => {
+  const onClickAward = () => {
+    window.open(
+      'https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/%EC%9D%B8%EA%B8%B0%EC%83%81.png',
+      '_blank'
+    );
+  };
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -32,15 +38,10 @@ const Together: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.ContentsText>기타</S.ContentsText>
                   <S.Contents>
                     - 파이널 프로젝트에서 "최고의 인기 프로젝트상" 수상
-
                   </S.Contents>
-                  <S.ContentsText>
-                    {/* 기타 : 최고의 프로젝트 투표의 전체 투표율 중 40%를 득표해
-                    "최고의 인기 프로젝트상" 수상 */}
-                  </S.ContentsText>
                 </div>
                 <div>
-                  <button>가즈아</button>
+                  <S.ForumBtn onClick={onClickAward}>AWARD</S.ForumBtn>
                 </div>
               </S.ModalContentDiv>
             </Animation1>

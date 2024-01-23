@@ -8,6 +8,10 @@ interface CloseModal {
 }
 
 const Velog: React.FC<CloseModal> = ({ onCloseModal }) => {
+  const onClickVelog = () => {
+    window.open('https://velog.io/@uiop3996/posts', '_blank');
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -27,7 +31,7 @@ const Velog: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.ContentsTexts>기타</S.ContentsTexts>
                   <S.Contents> - 2024년 1월 23일 기준</S.Contents>
                 </div>
-                <S.VelogLogo src='/velogLogo.png' alt='밸로그로고' />
+                <S.ForumBtn onClick={onClickVelog}> VELOG </S.ForumBtn>
               </S.ModalContentDiv>
             </Animation1>
           </S.ContainerDiv>

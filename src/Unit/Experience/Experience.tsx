@@ -47,7 +47,6 @@ const Experience = () => {
     setIsFourthHovered(false);
   };
 
-
   const onClickFirstImg = () => {
     setIsWorldForum((prev) => !prev);
   };
@@ -63,7 +62,6 @@ const Experience = () => {
   const onClickFourthImg = () => {
     setIsKistep((prev) => !prev);
   };
-
 
   return (
     <S.Container>
@@ -82,7 +80,7 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>01 </S.Numbering>
-              <S.TitleSpan>2022 ICH World Forum</S.TitleSpan>
+              <S.TitleSpan color='#5D35FE'>2022 ICH World Forum</S.TitleSpan>
               <S.SubTitleSpan>포럼 홈페이지 제작 업무 참여 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -111,7 +109,7 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>02 </S.Numbering>
-              <S.TitleSpan>2022 ICH Youth Forum</S.TitleSpan>
+              <S.TitleSpan color='#6952B5'>2022 ICH Youth Forum</S.TitleSpan>
               <S.SubTitleSpan>ZEP 맵 기획 및 운영</S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -142,7 +140,7 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
-              <S.TitleSpan>EPIS Intern</S.TitleSpan>
+              <S.TitleSpan color='#6952B5'>EPIS Intern</S.TitleSpan>
               <S.SubTitleSpan>사회적 기업 홍보 컨텐츠 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -170,7 +168,7 @@ const Experience = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>04 </S.Numbering>
-              <S.TitleSpan>KISTEP</S.TitleSpan>
+              <S.TitleSpan color='#FF0707'>KISTEP</S.TitleSpan>
               <S.SubTitleSpan>컨텐츠 기획 및 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>

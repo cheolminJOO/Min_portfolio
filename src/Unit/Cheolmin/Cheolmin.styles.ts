@@ -77,6 +77,9 @@ export const TitleSpan = styled.div`
   font-size: 20px;
   color: black;
   font-weight: bolder;
+  &:hover {
+    color: ${(props) => (props.color ? props.color : 'black')};
+  }
 `;
 
 export const SubTitleSpan = styled.div`

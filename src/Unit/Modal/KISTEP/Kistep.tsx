@@ -38,14 +38,14 @@ const Kistep: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.Contents>
                     {' '}
                     1. 홍보 컨텐츠 기획 및 제작 (동영상, 브로셔 등)
-                    <br /> 2. 사회문제해결플랫폼 홈페이지 운영 및 관리 <br /> 3.
+                    <br /> 2. 사회문제해결플랫폼(NTIS) 운영 및 관리 <br /> 3.
                     자료조사 및 문서화
                   </S.Contents>
                 </div>
                 <div>
-                  <button onClick={onClickNtisBtn}>NTIS</button>
-                  <button onClick={onClickBlogBtn}>BLOG</button>
-                  <button onClick={onClickYoutubeBtn}>Youtube</button>
+                  <S.ForumBtn onClick={onClickNtisBtn}>NTIS</S.ForumBtn>
+                  <S.ForumBtn onClick={onClickBlogBtn}>BLOG</S.ForumBtn>
+                  <S.ForumBtn onClick={onClickYoutubeBtn}>Youtube</S.ForumBtn>
                 </div>
               </S.ModalContentDiv>
             </Animation3>

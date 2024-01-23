@@ -48,8 +48,8 @@ const UserTest: React.FC<CloseModal> = ({ onCloseModal }) => {
                   </S.Contents>
                 </div>
                 <div>
-                  <button onClick={onClickFormBtn}>구글폼</button>
-                  <button onClick={onClickSurveyBtn}>유저피드백</button>
+                  <S.ForumBtn onClick={onClickFormBtn}>구글폼</S.ForumBtn>
+                  <S.ForumBtn onClick={onClickSurveyBtn}>유저피드백</S.ForumBtn>
                 </div>
               </S.ModalContentDiv>
             </Animation1>

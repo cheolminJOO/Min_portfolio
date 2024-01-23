@@ -26,6 +26,12 @@ export const Contents = styled.div`
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
+export const ForumBtn = styled.button`
+  background-color: #5035a6;
+  margin-bottom: 20px;
+  margin-right: 10px;
+`;
+
 export const ModalContentDiv = styled.div`
   width: 500px;
   height: 500px;

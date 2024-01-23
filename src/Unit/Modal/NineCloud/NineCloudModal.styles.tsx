@@ -103,6 +103,9 @@ export const TitleSpan = styled.span`
   color: #5035a6;
   font-size: 23px;
   font-weight: 700;
+  &:hover {
+    color: #5035a6;
+  }
 `;
 
 export const SubTitleSpan = styled.span`
@@ -110,4 +113,3 @@ export const SubTitleSpan = styled.span`
   font-size: 17.063px;
   font-weight: bolder;
 `;
-

@@ -37,7 +37,7 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.ContentsText>성과</S.ContentsText>
                   <S.Contents> - 유네스코 1면 등재</S.Contents>
                 </div>
-                <button onClick={onClickSecondChrome}>이동</button>
+                <S.ForumBtn onClick={onClickSecondChrome}> ZEP 이동</S.ForumBtn>
               </S.ModalContentDiv>
             </Animation3>
           </S.ContainerDiv>

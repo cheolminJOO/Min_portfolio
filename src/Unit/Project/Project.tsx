@@ -82,7 +82,7 @@ const Project = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>01 </S.Numbering>
-              <S.TitleSpan>Nine Cloud</S.TitleSpan>
+              <S.TitleSpan color='#391D93'>Nine Cloud</S.TitleSpan>
               <S.SubTitleSpan>AI 솔루션 감정 일기 </S.SubTitleSpan>
             </S.TitleAndNumber>
           </S.TitleAndNumberBox>
@@ -102,7 +102,7 @@ const Project = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>02 </S.Numbering>
-              <S.TitleSpan>BUSU</S.TitleSpan>
+              <S.TitleSpan color='#FF6A6A'>BUSU</S.TitleSpan>
               <S.SubTitleSpan>중고상품 커뮤니티</S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>
@@ -137,7 +137,7 @@ const Project = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
-              <S.TitleSpan>INSTAGRAM(CLONE)</S.TitleSpan>
+              <S.TitleSpan color='#E537C9'>INSTAGRAM(CLONE)</S.TitleSpan>
               <S.SubTitleSpan>인스타그램 클론 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
             <div>

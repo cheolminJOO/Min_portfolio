@@ -10,7 +10,7 @@ interface CloseModal {
 const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
   const onClickChrome = () => {
     window.open(
-      'https://ichworldforum.org/2022-%ec%84%b8%ea%b3%84%eb%ac%b4%ed%98%95%eb%ac%b8%ed%99%94%ec%9c%a0%ec%82%b0%ed%8f%ac%eb%9f%bc?lang=ko',
+      'https://ichworldforum.org/2022-world-forum-for-intangible-cultural-heritage-2',
       '_blank'
     );
   };
@@ -40,7 +40,9 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                     SEO 최적화로 전년 대비 방문자율 40% 상승
                   </S.Contents>
                 </div>
-                <button onClick={onClickChrome}>이동</button>
+                <S.ForumBtn onClick={onClickChrome}>
+                  포럼 홈페이지 이동
+                </S.ForumBtn>
               </S.ModalContentDiv>
             </Animation3>
           </S.ContainerDiv>

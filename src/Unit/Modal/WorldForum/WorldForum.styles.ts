@@ -125,6 +125,20 @@ export const Contents = styled.div`
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
+export const ContentsLink = styled.a`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
+export const ForumBtn = styled.button`
+  background-color: #5035a6;
+  margin-bottom: 20px;
+`;
+
 export const CancelButton = styled.button`
   width: 242px;
   height: 60px;

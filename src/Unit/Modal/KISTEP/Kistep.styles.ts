@@ -148,3 +148,9 @@ export const OkButton = styled.button`
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/redzoom.png'),
     auto;
 `;
+
+export const ForumBtn = styled.button`
+  background-color: #5035a6;
+  margin-bottom: 20px;
+  margin-right: 10px;
+`;
