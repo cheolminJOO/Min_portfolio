@@ -76,21 +76,28 @@ const Contact: React.FC<IProps> = ({
       {isFourthImage && <Portfolio onCloseModal={onClickFourthImg} />}
       <Animation3>
         <S.TextBox>
-          <ScrollAnimationContainer>
-            <S.FirstLineTextBox>
-              <S.FirstText> 저는 주철민입니다.</S.FirstText>
-            </S.FirstLineTextBox>
-          </ScrollAnimationContainer>
+          <S.FirstLineTextBox>
+            <ScrollAnimationContainer>
+              <S.Title> Contact ME !</S.Title>
+            </ScrollAnimationContainer>
+          </S.FirstLineTextBox>
         </S.TextBox>
       </Animation3>
       <S.ProjectBox>
-        {isActiveFireWork && (
-          <Fireworks
-            autorun={{ speed: 0.5, duration: 10000 }}
-            style={canvasStyles}
-            decorateOptions={decorateOptions} // 함수 실행을 위해 괄호를 추가
-          />
-        )}
+        <S.ContentsBox>
+          <div>
+            <S.Title>Github : </S.Title>
+            <S.FirstText target='_blank' href='https://github.com/cheolminJOO'>
+              https://github.com/cheolminJOO
+            </S.FirstText>
+          </div>
+          <div>
+            <S.Title>E-mail : </S.Title>
+            <S.FirstText href='mailto:cheolmin.joo@gmail.com'>
+              cheolmin.joo@gmail.com
+            </S.FirstText>
+          </div>
+        </S.ContentsBox>
       </S.ProjectBox>
     </S.Container>
   );

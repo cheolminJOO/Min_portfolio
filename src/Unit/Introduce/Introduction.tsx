@@ -11,7 +11,7 @@ interface IProps {
 
 const canvasStyles: React.CSSProperties = {
   position: 'fixed',
-  width: '100vw',
+  width: '800px',
   height: '100vh',
   zIndex: '3',
 };
@@ -23,12 +23,12 @@ const Introduction: React.FC<IProps> = ({
   const decorateOptions = (originalOptions: any) => {
     return {
       ...originalOptions,
-      particleCount: 200,
-      spread: 180,
+      particleCount: 300,
+      spread: 300,
       startVelocity: 50,
-      angle: 0,
+      angle: -20,
       ticks: 200,
-      origin: { x: -0.1, y: 0.3 },
+      origin: { x: -0.2, y: 0.3 },
       shapes: ['circle', 'circle', 'square'],
       color: ['red'],
       gravity: 0.5,

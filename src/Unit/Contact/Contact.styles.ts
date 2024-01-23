@@ -19,23 +19,36 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
 export const TextBox = styled.div`
+  width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 2px solid white;
+  border-left: none;
 `;
 
 export const FirstLineTextBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  width: 500px;
+  height: 100px;
+`;
+
+export const ContentsBox = styled.div`
+  display: flex;
+  width: 1000px;
+  height: 50%;
+  font-weight: bolder;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const HightLightText = styled.div`
@@ -44,7 +57,13 @@ export const HightLightText = styled.div`
   color: red;
 `;
 
-export const FirstText = styled.span`
+export const FirstText = styled.a`
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+`;
+
+export const Title = styled.span`
   font-size: 50px;
   font-weight: bolder;
   color: white;
@@ -62,6 +81,8 @@ export const ProjectBox = styled.div`
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const NineCloudGif = styled.img`
