@@ -18,6 +18,23 @@ export const ContainerDiv = styled.div`
   transition: opacity 0.3s ease-in-out;
 `;
 
+export const ContentsText = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
+export const Contents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
 export const GithubImg = styled(motion.img)`
   width: 50px;
   height: 50px;
@@ -64,37 +81,6 @@ export const ContentsTitle = styled.td`
   color: black;
 `;
 
-export const BoxButton = styled.div`
-  width: 400px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  margin-bottom: 40px;
-  text-align: center;
-`;
-
-export const TextStyleSpanH5 = styled.h5`
-  color: #5035a6;
-  width: 100%;
-  text-align: center;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-`;
-
-export const TextStyleSpanP = styled.p`
-  width: 100%;
-  color: #646464;
-  text-align: center;
-  font-size: 17.063px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  transform: translateY(-30px);
-`;
-
 export const TextStyleSpan = styled.span`
   color: white;
 `;
@@ -125,30 +111,3 @@ export const SubTitleSpan = styled.span`
   font-weight: 400;
 `;
 
-export const ContentsText = styled.div`
-  color: #646464;
-  font-size: 17.063px;
-  font-weight: 400;
-`;
-
-export const CancelButton = styled.button`
-  width: 242px;
-  height: 60px;
-  flex-shrink: 0;
-  background-color: #ece9f5;
-  color: #5035a6;
-  border-radius: 22px 0 22px 0;
-  border: 0px;
-  margin-left: 10px;
-  cursor: pointer;
-`;
-
-export const OkButton = styled.button`
-  width: 146px;
-  height: 60px;
-  flex-shrink: 0;
-  color: #5035a6;
-  border-radius: 0 20px 0 20px;
-  border: 0px;
-  cursor: pointer;
-`;

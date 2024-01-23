@@ -19,13 +19,14 @@ export const ContainerDiv = styled.div`
 
 export const ModalContentDiv = styled.div`
   width: 500px;
-  height: 650px;
+  height: 500px;
   border-radius: 40px;
   background: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Div = styled.div`
@@ -40,7 +41,7 @@ export const TitleBoxDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 `;
 
 export const ContentsTitle = styled.td`
@@ -61,7 +62,7 @@ export const TextStyleSpanH5 = styled.h5`
   color: #5035a6;
   width: 100%;
   text-align: center;
-  font-size: 23px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -98,7 +99,7 @@ export const StyleButton = styled.div`
 
 export const TitleSpan = styled.span`
   color: #5035a6;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 700;
 `;
 
@@ -106,6 +107,23 @@ export const SubTitleSpan = styled.span`
   color: #646464;
   font-size: 17.063px;
   font-weight: 400;
+`;
+
+export const ContentsText = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
+export const Contents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
 export const CancelButton = styled.button`

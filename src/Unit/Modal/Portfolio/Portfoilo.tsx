@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './Portfoilo.styles';
 import Portal from '../../Portal/Portal';
-import Animation1 from '../../Animation/Animation';
+import Animation2 from '../../Animation/Animation2';
 
 interface CloseModal {
   onCloseModal: () => void;
 }
 
 const Portfolio: React.FC<CloseModal> = ({ onCloseModal }) => {
-  const onClickFourthGithub = () => {
+  const onClickGithub = () => {
     window.open('https://github.com/cheolminJOO/Min_portfolio', '_blank');
   };
 
@@ -17,26 +17,45 @@ const Portfolio: React.FC<CloseModal> = ({ onCloseModal }) => {
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
-            <Animation1>
+            <Animation2>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
+                  <S.TitleSpan>Portfolio</S.TitleSpan>
+                  <S.SubTitleSpan>포트폴리오 사이트</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
-                  <S.ContentsText>
-                    내용 : 2022 세계무형문화유산포럼 업무
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    역할 1. 홈페이지 제작 업무 참여 2. 포럼
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
-                  </S.ContentsText>
+                  <S.ContentsText>기간</S.ContentsText>
+                  <S.Contents> - 2024.01 ~ 진행중</S.Contents>
+                  <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.Contents>
+                    - React, Vite, TypeScript, Styled-Components
+                  </S.Contents>
+                  <S.ContentsText>주요기능</S.ContentsText>
+                  <S.Contents>
+                    1. Full-page 기능 구현 (Custom)
+                    <br />
+                    2. 스크롤 이벤트 (IntersectionObserver) <br />
+                    3. 반응형
+                  </S.Contents>
+                </div>
+                <div>
+                  <S.GithubImg
+                    onClick={onClickGithub}
+                    src='/git.png'
+                    alt='깃허브'
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                  />
+                  <S.YoutubeImg
+                    onClick={onClickGithub}
+                    src='/youtubeLogo.png'
+                    alt='유튜브 로고'
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                  />
                 </div>
               </S.ModalContentDiv>
-            </Animation1>
+            </Animation2>
           </S.ContainerDiv>
         </S.Div>
       </S.ContainerDiv>

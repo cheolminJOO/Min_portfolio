@@ -21,14 +21,14 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                 <S.SubTitleSpan>입력하신 내용이 모두 사라져요!</S.SubTitleSpan>
               </S.TitleBoxDiv>
               <div>
-                <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
-                <S.ContentsText>
-                  내용 : 2022 YOUTH Forum 업무
-                </S.ContentsText>
-                <S.ContentsText>
-                  역할 : ZEP 맵 기획과 운영 및 프로그램 진행
-                </S.ContentsText>
-                <S.ContentsText>성과 : 유네스코 1면 등재</S.ContentsText>
+                <S.ContentsText>기간</S.ContentsText>
+                <S.Contents> - 2022.03 ~ 2022.09</S.Contents>
+                <S.ContentsText>내용</S.ContentsText>
+                <S.Contents> - 2022 YOUTH Forum 업무</S.Contents>
+                <S.ContentsText>역할</S.ContentsText>
+                <S.Contents> - ZEP 맵 기획과 운영 및 프로그램 진행</S.Contents>
+                <S.ContentsText>성과</S.ContentsText>
+                <S.Contents> - 유네스코 1면 등재</S.Contents>
               </div>
               <button onClick={onClickSecondChrome}>이동</button>
             </S.ModalContentDiv>

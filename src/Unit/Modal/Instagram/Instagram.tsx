@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './Instagram.styles';
 import Portal from '../../Portal/Portal';
-import Animation1 from '../../Animation/Animation';
+import Animation2 from '../../Animation/Animation2';
 
 interface CloseModal {
   onCloseModal: () => void;
 }
 
 const Instagram: React.FC<CloseModal> = ({ onCloseModal }) => {
-  const onCLickThirdGithub = () => {
+  const onCLickGithub = () => {
     window.open('https://github.com/insta-clone-hh99/front', '_blank');
   };
   return (
@@ -16,26 +16,47 @@ const Instagram: React.FC<CloseModal> = ({ onCloseModal }) => {
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
-            <Animation1>
+            <Animation2>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
+                  <S.TitleSpan>Instagram</S.TitleSpan>
+                  <S.SubTitleSpan>인스타그램 클론 사이트</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
-                  <S.ContentsText>
-                    내용 : 2022 세계무형문화유산포럼 업무
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    역할 1. 홈페이지 제작 업무 참여 2. 포럼
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
-                  </S.ContentsText>
+                  <S.ContentsText>기간</S.ContentsText>
+                  <S.Contents> - 23.11.24 ~ 23.11.30</S.Contents>
+                  <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.Contents>
+                    {' '}
+                    - React, Javascript, CRA, Styled-Components
+                  </S.Contents>
+                  <S.ContentsText>주요 기능</S.ContentsText>
+                  <S.Contents>
+                    1. 게시글,댓글 이모티콘 적용 (emoji-picker-react)
+                    <br />
+                    2. 모달 기능 구현 (react-portal)
+                    <br />
+                    3. 이미지 미리보기 (FileReader)
+                  </S.Contents>
+                </div>
+                <div>
+                  <S.GithubImg
+                    onClick={onCLickGithub}
+                    src='/git.png'
+                    alt='깃허브'
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                  />
+                  <S.YoutubeImg
+                    onClick={onCLickGithub}
+                    src='/youtubeLogo.png'
+                    alt='유튜브 로고'
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                  />
                 </div>
               </S.ModalContentDiv>
-            </Animation1>
+            </Animation2>
           </S.ContainerDiv>
         </S.Div>
       </S.ContainerDiv>

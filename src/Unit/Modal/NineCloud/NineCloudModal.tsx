@@ -26,16 +26,23 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
                   </S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2023.12 ~ 2024.01</S.ContentsText>
-                  <S.ContentsText>
-                    Tech Stack : React, Styled-Components, Recoil
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    역할 1. 홈페이지 제작 업무 참여 2. 포럼
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
-                  </S.ContentsText>
+                  <S.ContentsText>기간</S.ContentsText>
+                  <S.Contents> - 2023.12 ~ 2024.01</S.Contents>
+                  <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.Contents>
+                    {' '}
+                    - React, TypeScript, Styeld-Components, Recoil
+                  </S.Contents>
+                  <S.ContentsText>주요기능</S.ContentsText>
+                  <S.Contents>
+                    1. 달력 기능 및 디자인 (data-fns, table)
+                    <br />
+                    2. 일기등록 및 수정 (react-quill)
+                    <br />
+                    3. 모달창 구현 (react-portal)
+                    <br />
+                    4. 전반적인 애니메이션 기능 (framer-motion)
+                  </S.Contents>
                 </div>
                 <div>
                   <S.GithubImg

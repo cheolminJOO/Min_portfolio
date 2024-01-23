@@ -27,16 +27,25 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.SubTitleSpan>중고매매 커뮤니티 서비스</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2023.08 ~ 진행중</S.ContentsText>
-                  <S.ContentsText>
-                    Tech Stack : Next.js, Styled.Components, Recoil
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    역할 1. 홈페이지 제작 업무 참여 2. 포럼
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
-                  </S.ContentsText>
+                  <S.ContentsText>기간</S.ContentsText>
+                  <S.Contents> - 2023.08 ~ 진행중</S.Contents>
+                  <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.Contents>
+                    {' '}
+                    - Next.js, TypeScript, Styled.Components, Recoil
+                  </S.Contents>
+                  <S.ContentsText>주요기능</S.ContentsText>
+                  <S.Contents>
+                    1. 무한스크롤 (react-infinite-scroller)
+                    <br />
+                    2. 카카오 지도 검색 (kakao map api)
+                    <br />
+                    3. 게시판 검색 (refetch, search)
+                    <br />
+                    4. 주소 찾기 기능 (kakao 주소 api)
+                    <br />
+                    5. 알림창 (sweetAlert2)
+                  </S.Contents>
                 </div>
                 <div>
                   <S.GithubImg

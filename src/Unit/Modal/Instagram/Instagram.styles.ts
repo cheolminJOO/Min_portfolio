@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const ContainerDiv = styled.div`
   position: fixed;
@@ -9,7 +10,7 @@ export const ContainerDiv = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,15 +18,31 @@ export const ContainerDiv = styled.div`
   transition: opacity 0.3s ease-in-out;
 `;
 
+export const GithubImg = styled(motion.img)`
+  width: 50px;
+  height: 50px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
+export const YoutubeImg = styled(motion.img)`
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
 export const ModalContentDiv = styled.div`
   width: 500px;
-  height: 650px;
-  border-radius: 40px;
+  height: 500px;
   background: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
+  justify-content: space-between;
+  border-radius: 300px;
 `;
 
 export const Div = styled.div`
@@ -45,37 +62,6 @@ export const TitleBoxDiv = styled.div`
 
 export const ContentsTitle = styled.td`
   color: black;
-`;
-
-export const BoxButton = styled.div`
-  width: 400px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  margin-bottom: 40px;
-  text-align: center;
-`;
-
-export const TextStyleSpanH5 = styled.h5`
-  color: #5035a6;
-  width: 100%;
-  text-align: center;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-`;
-
-export const TextStyleSpanP = styled.p`
-  width: 100%;
-  color: #646464;
-  text-align: center;
-  font-size: 17.063px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  transform: translateY(-30px);
 `;
 
 export const TextStyleSpan = styled.span`
@@ -112,26 +98,16 @@ export const ContentsText = styled.div`
   color: #646464;
   font-size: 17.063px;
   font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
-export const CancelButton = styled.button`
-  width: 242px;
-  height: 60px;
-  flex-shrink: 0;
-  background-color: #ece9f5;
-  color: #5035a6;
-  border-radius: 22px 0 22px 0;
-  border: 0px;
-  margin-left: 10px;
-  cursor: pointer;
+export const Contents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
-export const OkButton = styled.button`
-  width: 146px;
-  height: 60px;
-  flex-shrink: 0;
-  color: #5035a6;
-  border-radius: 0 20px 0 20px;
-  border: 0px;
-  cursor: pointer;
-`;

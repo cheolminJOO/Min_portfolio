@@ -19,13 +19,14 @@ export const ContainerDiv = styled.div`
 
 export const ModalContentDiv = styled.div`
   width: 500px;
-  height: 650px;
+  height: 500px;
   border-radius: 40px;
   background: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Div = styled.div`
@@ -102,10 +103,21 @@ export const TitleSpan = styled.span`
   font-weight: 700;
 `;
 
-export const SubTitleSpan = styled.span`
+export const ContentsTexts = styled.div`
   color: #646464;
   font-size: 17.063px;
   font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
+export const Contents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
 export const ContentsText = styled.div`
@@ -133,5 +145,12 @@ export const OkButton = styled.button`
   color: #5035a6;
   border-radius: 0 20px 0 20px;
   border: 0px;
+  cursor: pointer;
+`;
+
+export const VelogLogo = styled.img`
+  width: 100px;
+  height: 50px;
+  border-radius: 100px;
   cursor: pointer;
 `;

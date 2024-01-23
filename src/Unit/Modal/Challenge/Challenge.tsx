@@ -16,17 +16,14 @@ const Challenge: React.FC<CloseModal> = ({ onCloseModal }) => {
             <Animation1>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
+                  <S.TitleSpan>도전</S.TitleSpan>
+                  <S.SubTitleSpan>익숙한 것과 새로운 것</S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간 : 2022.03 ~ 2022.09</S.ContentsText>
-                  <S.ContentsText>
-                    내용 : 2022 세계무형문화유산포럼 업무
-                  </S.ContentsText>
-                  <S.ContentsText>
-                    역할 1. 홈페이지 제작 업무 참여 2. 포럼
-                  </S.ContentsText>
+                  <S.ContentsText>1. 전역 (2016.04 ~ 2018.04)</S.ContentsText>
+                  <S.Contents> 2. React, Next.js</S.Contents>
+                  <S.ContentsText>2. 개발 도구</S.ContentsText>
+                  <S.Contents>- CRA, Vite</S.Contents>
                   <S.ContentsText>
                     성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
                   </S.ContentsText>
