@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from 'react';
 import * as S from './Cheolmin.styles';
 import Velog from '../Modal/Velog/Velog';
@@ -5,6 +6,7 @@ import UserTest from '../Modal/UserTest/UserTest';
 import Together from '../Modal/Together/Together';
 import Challenge from '../Modal/Challenge/Challenge';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
+
 
 const Cheolmin = () => {
   const [isFirstImage, setIsFirstImage] = useState(false);
@@ -16,6 +18,7 @@ const Cheolmin = () => {
   const [isSecondHovered, setIsSecondHovered] = useState(false);
   const [isThirdHovered, setIsThirdHovered] = useState(false);
   const [isFourthHovered, setIsFourthHovered] = useState(false);
+
 
   const handleMouseEnter = () => {
     setIsHovered(true);

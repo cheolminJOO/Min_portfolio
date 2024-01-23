@@ -1,6 +1,5 @@
 import * as S from './YouthForum.styles';
 import Portal from '../../Portal/Portal';
-import Animation2 from '../../Animation/Animation2';
 import Animation3 from '../../Animation/Animation3';
 
 interface CloseModal {

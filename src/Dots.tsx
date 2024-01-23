@@ -14,7 +14,8 @@ const Dot: React.FC<Pages> = ({ num, currentPage }) => {
         backgroundColor: currentPage === num ? 'white' : 'transparent',
         transition: 'background-color 0.5s',
       }}
-    ></div>
+    >
+    </div>
   );
 };
 

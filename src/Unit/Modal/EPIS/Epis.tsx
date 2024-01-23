@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './Epis.styles';
 import Portal from '../../Portal/Portal';
-import Animation2 from '../../Animation/Animation2';
 import Animation3 from '../../Animation/Animation3';
 
 interface CloseModal {

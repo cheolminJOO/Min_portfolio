@@ -1,7 +1,6 @@
 import React from 'react';
 import Portal from '../../Portal/Portal';
 import * as S from './Kistep.styles';
-import Animation2 from '../../Animation/Animation2';
 import Animation3 from '../../Animation/Animation3';
 
 interface CloseModal {

@@ -2,16 +2,29 @@ import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
 import Dots from './Dots';
-import Introduction from './Unit/Introduce/Introduction';
 import Project from './Unit/Project/Project';
 import Experience from './Unit/Experience/Experience';
 import Cheolmin from './Unit/Cheolmin/Cheolmin';
+import Contact from './Unit/Contact/Contact';
+import Introduction from './Unit/Introduce/Introduction';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
   const outerDivRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isActiveFireWork, setIsActiveFireWork] = useState(false);
+
   useEffect(() => {
+    if (isActiveFireWork) {
+      const timeoutId = setTimeout(() => {
+        setIsActiveFireWork(false);
+      }, 1500);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isActiveFireWork]);
+
+  useEffect(() => {
+    setIsActiveFireWork(true);
     const wheelHandler = (e: React.WheelEvent<HTMLDivElement>) => {
       e.preventDefault();
       if (!outerDivRef.current) {
@@ -51,6 +64,16 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(4);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
+          setIsActiveFireWork(true);
+          // 현재 4페이지
+          console.log('현재 3페이지, up');
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 4,
+            left: 0,
+            behavior: 'smooth',
+          });
+          setCurrentPage(5);
         }
       } else {
         // 스크롤 올릴 때
@@ -80,7 +103,7 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(2);
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
           // 현재 4페이지
           console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
@@ -89,6 +112,13 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(3);
+        } else {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
+            left: 0,
+            behavior: 'smooth',
+          });
+          setCurrentPage(4);
         }
       }
     };
@@ -116,10 +146,17 @@ function App() {
   return (
     <div ref={outerDivRef} className='outer'>
       <Dots currentPage={currentPage} />
-      <Introduction />
+      <Introduction
+        isActiveFireWork={isActiveFireWork}
+        setIsActiveFireWork={setIsActiveFireWork}
+      />
       <Project />
       <Experience />
       <Cheolmin />
+      <Contact
+        isActiveFireWork={isActiveFireWork}
+        setIsActiveFireWork={setIsActiveFireWork}
+      />
     </div>
   );
 }

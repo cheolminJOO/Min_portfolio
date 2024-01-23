@@ -1,8 +1,6 @@
 import React from 'react';
 import * as S from './WorldForum.styles';
 import Portal from '../../Portal/Portal';
-import Animation1 from '../../Animation/Animation';
-import Animation2 from '../../Animation/Animation2';
 import Animation3 from '../../Animation/Animation3';
 
 interface CloseModal {
