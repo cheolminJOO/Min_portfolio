@@ -1,3 +1,6 @@
+import * as S from './Dots.styels'
+
+
 interface Pages {
   num?: number;
   currentPage: number;
@@ -5,7 +8,7 @@ interface Pages {
 
 const Dot: React.FC<Pages> = ({ num, currentPage }) => {
   return (
-    <div
+    <S.BoxDiv
       style={{
         width: 10,
         height: 10,
@@ -14,8 +17,7 @@ const Dot: React.FC<Pages> = ({ num, currentPage }) => {
         backgroundColor: currentPage === num ? 'white' : 'transparent',
         transition: 'background-color 0.5s',
       }}
-    >
-    </div>
+    ></S.BoxDiv>
   );
 };
 

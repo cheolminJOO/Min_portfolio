@@ -28,7 +28,13 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 2px solid white;
+  border: 2px solid white;
+  @media (max-width: 1500px) {
+    height: 10%;
+  }
+  @media (max-width: 915px) {
+    display: none;
+  }
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -57,10 +63,19 @@ export const SecondText = styled.div`
 
 export const ProjectBox = styled.div`
   width: 100vw;
-  height: 70%;
+  flex: 70%;
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1850px) {
+    flex-wrap: wrap; /* 화면이 작아질 때 컬럼 방향으로 변경 */
+    align-items: center; /* 중앙 정렬 */
+  }
+  @media (max-width: 1700px) {
+    /* 화면이 작아질 때 컬럼 방향으로 변경 */
+    align-items: center;
+    justify-content: center; /* 중앙 정렬 */
+  }
 `;
 
 export const NineCloudGif = styled.img`
@@ -89,10 +104,31 @@ export const SubTitleSpan = styled.div`
 `;
 
 export const ProjectBoxDiv = styled(motion.div)`
-  margin: 3rem;
-  width: 360px;
+  margin: 3rem; /* 수정된 부분: 여백을 좀 더 줄임 */
+  width: 360px; /* 수정된 부분: 너비를 조절 */
   background-color: white;
   border-radius: 40px;
+
+  @media (max-width: 1850px) {
+    width: 350px;
+    height: 450px;
+    margin: 2rem;
+  }
+  @media (max-width: 1700px) {
+    width: 300px;
+    margin: 1rem;
+  }
+  @media (max-width: 1330px) {
+    width: 330px;
+    height: 350px;
+    margin: 0.5rem 4rem;
+    align-items: center;
+    justify-content: center; /* 중앙 정렬 */
+  }
+  @media (max-width: 915px) {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
 `;
 
 export const TitleAndNumberBox = styled.div`
@@ -124,10 +160,18 @@ export const YoutubeImg = styled(motion.img)`
 `;
 
 export const ProjectImg = styled(motion.img)`
-  &:hover {
-    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
-  }
-
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
     auto;
+  width: 100%; /* 수정된 부분: 이미지를 부모 요소의 100%로 설정하여 크기 조절 */
+  max-height: 340px; /* 수정된 부분: 최대 높이를 지정하여 세로 크기를 제한 */
+  &:hover {
+    animation: ${floatingAnimation} 1.3s ease-in-out infinite;
+  }
+  @media (max-width: 1330px) {
+    height: 250px;
+  }
+
+  @media (max-height: 806px) {
+    height: 250px;
+  }
 `;

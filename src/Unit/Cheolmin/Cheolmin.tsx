@@ -171,7 +171,7 @@ const Cheolmin = () => {
               <S.Numbering>04 </S.Numbering>
               <S.TitleSpan>"성장"</S.TitleSpan>
               <S.SubTitleSpan>
-                익숙한 것과 새로운 것의 조화를 추구{' '}
+                익숙한 것과 새로운 것의 조화 추구{' '}
               </S.SubTitleSpan>
             </S.TitleAndNumber>
           </S.TitleAndNumberBox>

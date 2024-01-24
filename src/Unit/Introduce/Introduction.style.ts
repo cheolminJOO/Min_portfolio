@@ -5,6 +5,10 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+
+  /* @media (min-width: 1500px) {
+    width: 80vw;
+  } */
 `;
 
 export const TextBox = styled.div`
