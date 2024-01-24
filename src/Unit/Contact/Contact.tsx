@@ -13,7 +13,6 @@ interface IProps {
   setIsActiveFireWork: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-
 const Contact: React.FC<IProps> = ({
   isActiveFireWork,
   setIsActiveFireWork,
@@ -22,7 +21,6 @@ const Contact: React.FC<IProps> = ({
   const [isSecondImage, setIsSecondImage] = useState(false);
   const [isThirdImage, setIsThirdImage] = useState(false);
   const [isFourthImage, setIsFourthImage] = useState(false);
-  
 
   useEffect(() => {
     if (isActiveFireWork) {
@@ -66,18 +64,18 @@ const Contact: React.FC<IProps> = ({
       </Animation3>
       <S.ProjectBox>
         <S.ContentsBox>
-          <div>
+          <S.RelativeDiv>
             <S.Title>Github : </S.Title>
             <S.FirstText target='_blank' href='https://github.com/cheolminJOO'>
               https://github.com/cheolminJOO
             </S.FirstText>
-          </div>
-          <div>
+          </S.RelativeDiv>
+          <S.RelativeDiv>
             <S.Title>E-mail : </S.Title>
             <S.FirstText href='mailto:cheolmin.joo@gmail.com'>
               cheolmin.joo@gmail.com
             </S.FirstText>
-          </div>
+          </S.RelativeDiv>
         </S.ContentsBox>
       </S.ProjectBox>
     </S.Container>

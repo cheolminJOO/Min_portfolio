@@ -33,6 +33,11 @@ export const TextBox = styled.div`
   @media (max-width: 1500px) {
     height: 10%;
   }
+
+  @media (max-height: 860px) {
+    display: none;
+  }
+
   @media (max-width: 915px) {
     display: none;
   }
@@ -108,6 +113,11 @@ export const ProjectBoxDiv = styled(motion.div)`
     flex-wrap: wrap;
     margin: 0.5rem;
   }
+
+  @media (max-height: 700px) {
+    height: 300px;
+    width: 300px;
+  }
 `;
 
 export const ProjectImg = styled(motion.img)`
@@ -124,6 +134,11 @@ export const ProjectImg = styled(motion.img)`
 
   @media (max-height: 806px) {
     height: 250px;
+  }
+
+  @media (max-height: 700px) {
+    height: 200px;
+    width: 300px;
   }
 `;
 

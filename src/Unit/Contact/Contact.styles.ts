@@ -1,17 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
-const floatingAnimation = keyframes`
-  0% {
-    transform: translate(0%,0%);
-  }
-  50% {
-    transform: translate(0%, 3%);
-  }
-  100% {
-    transform: translate(0%,0%);
-  }
-`;
 
 export const Container = styled.div`
   background-color: black;
@@ -21,6 +9,10 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 840px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -31,6 +23,13 @@ export const TextBox = styled.div`
   justify-content: center;
   border: 2px solid white;
   border-left: none;
+  @media (max-width: 1300px) {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -38,7 +37,11 @@ export const FirstLineTextBox = styled.div`
   align-items: center;
   justify-content: center;
   width: 500px;
-  height: 100px;
+  height: 500px;
+  @media (max-width: 1300px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const ContentsBox = styled.div`
@@ -61,12 +64,30 @@ export const FirstText = styled.a`
   font-size: 50px;
   font-weight: bolder;
   color: white;
+  @media (max-width: 1500px) {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    font-size: 30px;
+  }
+
+  @media (max-width: 1330px) {
+    font-size: 35px;
+  }
+`;
+
+export const RelativeDiv = styled.div`
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.span`
   font-size: 50px;
   font-weight: bolder;
   color: white;
+  @media (max-width: 1500px) {
+    font-size: 40px;
+  }
 `;
 
 export const SecondText = styled.div`
@@ -83,6 +104,10 @@ export const ProjectBox = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 915px) {
+    width: 70%;
+  }
 `;
 
 export const NineCloudGif = styled.img`
@@ -112,41 +137,4 @@ export const ProjectBoxDiv = styled(motion.div)`
   width: 360px;
   background-color: white;
   border-radius: 40px;
-`;
-
-export const TitleAndNumberBox = styled.div`
-  margin-left: 2rem;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const TitleAndNumber = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-`;
-
-export const GithubImg = styled(motion.img)`
-  width: 50px;
-  height: 50px;
-  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
-    auto;
-`;
-
-export const YoutubeImg = styled(motion.img)`
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
-    auto;
-`;
-
-export const ProjectImg = styled(motion.img)`
-  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
-    auto;
-  &:hover {
-    animation: ${floatingAnimation} 1.3s ease-in-out infinite; /* 떠다니는 애니메이션 추가 */
-  }
 `;

@@ -53,6 +53,10 @@ export const TextBox = styled.div`
   @media (max-width: 915px) {
     display: none;
   }
+
+  @media (max-height: 860px) {
+    display: none;
+  }
 `;
 
 export const FirstLineTextBox = styled.div`
@@ -72,6 +76,14 @@ export const TextStyle = styled.span`
   font-size: 50px;
   font-weight: bolder;
   color: white;
+
+  @media (max-width: 870) {
+    animation: none;
+  }
+
+  @media (max-width: 1330px) {
+    font-size: 35px;
+  }
 `;
 
 export const FirstText = styled.span`
@@ -83,12 +95,23 @@ export const FirstText = styled.span`
   @media (max-width: 870) {
     animation: none;
   }
+
+  @media (max-width: 1330px) {
+    font-size: 35px;
+  }
 `;
 
 export const SecondText = styled.div`
   font-size: 50px;
   font-weight: bolder;
   color: white;
+  @media (max-width: 870) {
+    animation: none;
+  }
+
+  @media (max-width: 1330px) {
+    font-size: 35px;
+  }
 `;
 
 export const ProjectBox = styled.div`
@@ -159,6 +182,11 @@ export const ProjectBoxDiv = styled(motion.div)`
     flex-wrap: wrap;
     margin: 0.5rem;
   }
+
+  @media (max-height: 700px) {
+    height: 300px;
+    width: 300px;
+  }
 `;
 
 export const TitleAndNumberBox = styled.div`
@@ -196,5 +224,10 @@ export const ProjectImg = styled(motion.img)`
 
   @media (max-height: 806px) {
     height: 250px;
+  }
+
+  @media (max-height: 700px) {
+    height: 200px;
+    width: 300px;
   }
 `;
