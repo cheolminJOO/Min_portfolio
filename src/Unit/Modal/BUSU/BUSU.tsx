@@ -27,7 +27,7 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>
-                  <S.Contents> - 2023.08 ~ 진행중</S.Contents>
+                  <S.Contents> - 2023.08 ~ 2024.01</S.Contents>
                   <S.ContentsText>Tech Stack</S.ContentsText>
                   <S.Contents>
                     {' '}

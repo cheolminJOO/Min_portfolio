@@ -126,7 +126,7 @@ const Project = () => {
               onClick={onClickSecondImg}
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
-              src={isSecondHovered ? '/BUSU.png' : '/BlackBUSU.png'}
+              src={isSecondHovered ? '/BUSUc.png' : '/BUSUb.png'}
               alt='BUSU Logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -194,7 +194,7 @@ const Project = () => {
           <div>
             <S.ProjectImg
               onClick={onClickFourthImg}
-              src={isFourthHovered ? '/insta.png' : '/BlackInsta.png'}
+              src={isFourthHovered ? '/portfolioC.png' : '/portfolioB.png'}
               alt='instagram logo'
               onMouseEnter={handleMouseEnter4}
               onMouseLeave={handleMouseLeave4}

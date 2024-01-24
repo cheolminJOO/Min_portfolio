@@ -158,7 +158,7 @@ const Cheolmin = () => {
               onMouseEnter={handleMouseEnter3}
               onMouseLeave={handleMouseLeave3}
               onClick={onClickThirdImg}
-              src={isThirdHovered ? '/OneTeam.png' : '/BlackOneTeam.png'}
+              src={isThirdHovered ? '/togetherC.png' : '/togetherB.png'}
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
@@ -169,24 +169,18 @@ const Cheolmin = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>04 </S.Numbering>
-              <S.TitleSpan>"도전"</S.TitleSpan>
-              <S.SubTitleSpan>익숙한 것 보다 새로운 것 </S.SubTitleSpan>
+              <S.TitleSpan>"성장"</S.TitleSpan>
+              <S.SubTitleSpan>
+                익숙한 것과 새로운 것의 조화를 추구{' '}
+              </S.SubTitleSpan>
             </S.TitleAndNumber>
-            {/* <div>
-              <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
               onMouseEnter={handleMouseEnter4}
               onMouseLeave={handleMouseLeave4}
               onClick={onClickFourthImg}
-              src={isFourthHovered ? '/KISTEP.png' : '/BKISTEP.png'}
+              src={isFourthHovered ? '/growth.png' : '/BlackGrowth.png'}
               alt='instagram logo'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}

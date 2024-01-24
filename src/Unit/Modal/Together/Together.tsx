@@ -31,9 +31,9 @@ const Together: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.ContentsText>내용</S.ContentsText>
                   <S.Contents>
                     1. 미니 프로젝트 | 6명 | 리더,발표
-                    <br /> 2. 주특기 프로젝트 | 4명
-                    <br /> 3. 클론 코딩 프로젝트 | 4명
-                    <br /> 4. 파이널 프로젝트 | 6명 | 리더,발표
+                    <br /> 2. 주특기 프로젝트 | 4명 | 발표
+                    <br /> 3. 클론 코딩 프로젝트 | 4명 | 발표
+                    <br /> 4. 파이널 프로젝트 | 6명 | 리더
                   </S.Contents>
                   <S.ContentsText>기타</S.ContentsText>
                   <S.Contents>

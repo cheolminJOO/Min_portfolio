@@ -34,9 +34,23 @@ export const Contents = styled.div`
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
+export const TeamProjectDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HyperLinkText = styled.a`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
+  cursor: pointer;
+`;
+
 export const ModalContentDiv = styled.div`
   width: 500px;
-  height: 500px;
+  height: 550px;
   border-radius: 40px;
   background: #fff;
   display: flex;
@@ -124,7 +138,6 @@ export const SubTitleSpan = styled.span`
   font-size: 17.063px;
   font-weight: bolder;
 `;
-
 
 export const CancelButton = styled.button`
   width: 242px;

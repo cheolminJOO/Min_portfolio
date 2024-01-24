@@ -16,17 +16,63 @@ const Challenge: React.FC<CloseModal> = ({ onCloseModal }) => {
             <Animation1>
               <S.ModalContentDiv>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>도전</S.TitleSpan>
-                  <S.SubTitleSpan>익숙한 것과 새로운 것</S.SubTitleSpan>
+                  <S.TitleSpan>성장</S.TitleSpan>
+                  <S.SubTitleSpan>
+                    익숙한 것과 새로운 것의 조화를 추구
+                  </S.SubTitleSpan>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>1. 전역 (2016.04 ~ 2018.04)</S.ContentsText>
-                  <S.Contents> 2. React, Next.js</S.Contents>
-                  <S.ContentsText>2. 개발 도구</S.ContentsText>
-                  <S.Contents>- CRA, Vite</S.Contents>
-                  <S.ContentsText>
-                    성과 : SEO 최적화로 전년 대비 방문자율 40% 상승
-                  </S.ContentsText>
+                  <S.ContentsText> 경험 한 기술</S.ContentsText>
+                  <S.Contents>
+                    {' '}
+                    • 프레임워크 : Next.js, React <br /> • CSS :
+                    Styled-Components <br /> • 개발도구 : CRA, Vite <br /> •
+                    상태관리 : Redux, Recoil <br /> • 클라이언트 : React-Query,
+                    Axios <br /> • CI/CD : Github Actions, Vercel <br /> • 언어
+                    : TypeScript
+                  </S.Contents>
+                  <S.ContentsText> 팀 프로젝트</S.ContentsText>
+                  <S.TeamProjectDiv>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/cheolminJOO/web-miniproject_6_'
+                    >
+                      1. 웹미니프로젝트
+                    </S.HyperLinkText>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/dh7hong/front-have-fun'
+                    >
+                      2. 주특기 프로젝트
+                    </S.HyperLinkText>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/insta-clone-hh99/front'
+                    >
+                      3. 클론코딩 프로젝트
+                    </S.HyperLinkText>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/final-project-hh99/front'
+                    >
+                      4. 파이널 프로젝트
+                    </S.HyperLinkText>
+                  </S.TeamProjectDiv>
+                  <S.ContentsText> 개인 프로젝트</S.ContentsText>
+                  <S.TeamProjectDiv>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/cheolminJOO/Buying-and-Selling-Used-Stuff'
+                    >
+                      1. BUSU
+                    </S.HyperLinkText>
+                    <S.HyperLinkText
+                      target='_blank'
+                      href='https://github.com/cheolminJOO/Min_portfolio'
+                    >
+                      2. Portfolio
+                    </S.HyperLinkText>
+                  </S.TeamProjectDiv>
                 </div>
               </S.ModalContentDiv>
             </Animation1>
