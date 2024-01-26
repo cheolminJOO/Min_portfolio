@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { MouseEvent, useState } from 'react';
+import {useState } from 'react';
 import * as S from './Cheolmin.styles';
 import Velog from '../Modal/Velog/Velog';
 import UserTest from '../Modal/UserTest/UserTest';
