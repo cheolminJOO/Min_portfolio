@@ -63,7 +63,7 @@ export const FirstLineTextBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
 `;
 
 export const HightLightText = styled.div`
