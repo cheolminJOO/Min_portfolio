@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react';
 import Animation2 from '../../Animation/Animation2';
 import Portal from '../../Portal/Portal';
 import * as S from './NineCloudModal.styles';
@@ -12,18 +13,22 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
     window.open('https://www.youtube.com/watch?v=Ha4b-zM9gzc', '_blank');
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation2>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>Nine Cloud</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    AI 솔루션 감정일기 클라우드 서비스
-                  </S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>Nine Cloud</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

@@ -83,15 +83,6 @@ const Experience = () => {
               <S.TitleSpan color='#5D35FE'>2022 ICH World Forum</S.TitleSpan>
               <S.SubTitleSpan>포럼 홈페이지 제작 업무 참여 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.YoutubeImg
-                onClick={onClickChrome}
-                src='/chrome.png'
-                alt='크롬 로고 '
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -112,15 +103,6 @@ const Experience = () => {
               <S.TitleSpan color='#6952B5'>2022 ICH Youth Forum</S.TitleSpan>
               <S.SubTitleSpan>ZEP 맵 기획 및 운영</S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.YoutubeImg
-                onClick={onClickSecondChrome}
-                src='/chrome.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -143,14 +125,6 @@ const Experience = () => {
               <S.TitleSpan color='#6952B5'>EPIS Intern</S.TitleSpan>
               <S.SubTitleSpan>사회적 기업 홍보 컨텐츠 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -171,14 +145,6 @@ const Experience = () => {
               <S.TitleSpan color='#FF0707'>KISTEP</S.TitleSpan>
               <S.SubTitleSpan>컨텐츠 기획 및 제작 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -192,8 +158,6 @@ const Experience = () => {
             />
           </div>
         </S.ProjectBoxDiv>
-        <div></div>
-        <div></div>
       </S.ProjectBox>
     </S.Container>
   );

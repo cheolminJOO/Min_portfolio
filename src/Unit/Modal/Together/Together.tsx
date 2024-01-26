@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
 import * as S from './Together.styls';
@@ -14,16 +14,22 @@ const Together: React.FC<CloseModal> = ({ onCloseModal }) => {
       '_blank'
     );
   };
+
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation1>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>함께, 다 같이</S.TitleSpan>
-                  <S.SubTitleSpan>2022.03 ~ 2022.09</S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>Together</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

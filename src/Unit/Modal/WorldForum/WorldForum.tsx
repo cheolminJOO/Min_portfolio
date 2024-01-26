@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import * as S from './WorldForum.styles';
 import Portal from '../../Portal/Portal';
 import Animation3 from '../../Animation/Animation3';
@@ -15,16 +15,22 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
     );
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation3>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>포럼 홈페이지 제작 업무 참여</S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>ICH WORLD FORUM</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

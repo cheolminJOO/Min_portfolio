@@ -85,9 +85,6 @@ export const ProjectBox = styled.div`
   }
 `;
 
-export const NineCloudGif = styled.img`
-  height: 400px;
-`;
 
 export const Numbering = styled.div`
   font-size: 20px;

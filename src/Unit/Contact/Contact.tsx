@@ -1,11 +1,7 @@
 /* eslint-disable */
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import * as S from './Contact.styles';
-import NineCloudModal from '../Modal/NineCloud/NineCloudModal';
-import BUSU from '../Modal/BUSU/BUSU';
-import Instagram from '../Modal/Instagram/Instagram';
-import Portfolio from '../Modal/Portfolio/Portfoilo';
 import Animation3 from '../Animation/Animation3';
 
 interface IProps {
@@ -17,10 +13,6 @@ const Contact: React.FC<IProps> = ({
   isActiveFireWork,
   setIsActiveFireWork,
 }) => {
-  const [isFirstImage, setIsFirstImage] = useState(false);
-  const [isSecondImage, setIsSecondImage] = useState(false);
-  const [isThirdImage, setIsThirdImage] = useState(false);
-  const [isFourthImage, setIsFourthImage] = useState(false);
 
   useEffect(() => {
     if (isActiveFireWork) {
@@ -31,28 +23,9 @@ const Contact: React.FC<IProps> = ({
     }
   }, [isActiveFireWork]);
 
-  const onClickFirstImg = () => {
-    setIsFirstImage((prev) => !prev);
-  };
-
-  const onClickSecondImg = () => {
-    setIsSecondImage((prev) => !prev);
-  };
-
-  const onClickThirdImg = () => {
-    setIsThirdImage((prev) => !prev);
-  };
-
-  const onClickFourthImg = () => {
-    setIsFourthImage((prev) => !prev);
-  };
 
   return (
     <S.Container>
-      {isFirstImage && <NineCloudModal onCloseModal={onClickFirstImg} />}
-      {isSecondImage && <BUSU onCloseModal={onClickSecondImg} />}
-      {isThirdImage && <Instagram onCloseModal={onClickThirdImg} />}
-      {isFourthImage && <Portfolio onCloseModal={onClickFourthImg} />}
       <Animation3>
         <S.TextBox>
           <S.FirstLineTextBox>

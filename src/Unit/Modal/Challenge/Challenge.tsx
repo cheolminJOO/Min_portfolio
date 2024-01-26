@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
 import * as S from './Challenge.styles';
@@ -8,18 +8,21 @@ interface CloseModal {
 }
 
 const Challenge: React.FC<CloseModal> = ({ onCloseModal }) => {
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation1>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>성장</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    익숙한 것과 새로운 것의 조화를 추구
-                  </S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>Growth</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText> 경험 한 기술</S.ContentsText>

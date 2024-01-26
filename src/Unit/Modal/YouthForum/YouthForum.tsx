@@ -1,6 +1,7 @@
 import * as S from './YouthForum.styles';
 import Portal from '../../Portal/Portal';
 import Animation3 from '../../Animation/Animation3';
+import { MouseEvent } from 'react';
 
 interface CloseModal {
   onCloseModal: () => void;
@@ -11,18 +12,22 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
     window.open('https://zep.us/play/2mYqBe', '_blank');
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation3>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>ICH YOUTH FORUM</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    입력하신 내용이 모두 사라져요!
-                  </S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>ICH YOUTH FORUM</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

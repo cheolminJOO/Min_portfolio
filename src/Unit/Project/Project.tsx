@@ -105,21 +105,6 @@ const Project = () => {
               <S.TitleSpan color='#FF6A6A'>BUSU</S.TitleSpan>
               <S.SubTitleSpan>중고상품 커뮤니티</S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.GithubImg
-                onClick={onClickSecondGithub}
-                src='/git.png'
-                alt='깃허브'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-              <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -140,21 +125,6 @@ const Project = () => {
               <S.TitleSpan color='#E537C9'>INSTAGRAM(CLONE)</S.TitleSpan>
               <S.SubTitleSpan>인스타그램 클론 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.GithubImg
-                onClick={onCLickThirdGithub}
-                src='/git.png'
-                alt='깃허브'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-              <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -175,21 +145,6 @@ const Project = () => {
               <S.TitleSpan>Portfoilo</S.TitleSpan>
               <S.SubTitleSpan>포트폴리오 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            <div>
-              {/* <S.GithubImg
-                onClick={onClickFourthGithub}
-                src='/git.png'
-                alt='깃허브'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-              <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              /> */}
-            </div>
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg

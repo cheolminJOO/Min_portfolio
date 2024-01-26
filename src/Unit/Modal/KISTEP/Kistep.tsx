@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Portal from '../../Portal/Portal';
 import * as S from './Kistep.styles';
 import Animation3 from '../../Animation/Animation3';
@@ -20,16 +20,22 @@ const Kistep: React.FC<CloseModal> = ({ onCloseModal }) => {
     window.open('https://www.youtube.com/@scisoplatform/shorts', '_blank');
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation3>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>KISTEP</S.TitleSpan>
-                  <S.SubTitleSpan>컨텐츠 기획 및 제작</S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>KISTEP</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

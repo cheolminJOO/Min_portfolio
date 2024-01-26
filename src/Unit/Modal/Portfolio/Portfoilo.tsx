@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import * as S from './Portfoilo.styles';
 import Portal from '../../Portal/Portal';
 import Animation2 from '../../Animation/Animation2';
@@ -12,16 +12,23 @@ const Portfolio: React.FC<CloseModal> = ({ onCloseModal }) => {
     window.open('https://github.com/cheolminJOO/Min_portfolio', '_blank');
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
+            {' '}
             <Animation2>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>Portfolio</S.TitleSpan>
-                  <S.SubTitleSpan>포트폴리오 사이트</S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>Portfolio</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

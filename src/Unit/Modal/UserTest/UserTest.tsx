@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Portal from '../../Portal/Portal';
 import Animation1 from '../../Animation/Animation';
 import * as S from './UserTest.styles';
@@ -15,6 +15,10 @@ const UserTest: React.FC<CloseModal> = ({ onCloseModal }) => {
     );
   };
 
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   const onClickSurveyBtn = () => {
     window.open(
       'https://docs.google.com/spreadsheets/d/1WIKu4Sb3ajbFrCnKazmgvapi1DXgYqv7DIb8N4UKKjU/edit#gid=1547708136',
@@ -28,12 +32,12 @@ const UserTest: React.FC<CloseModal> = ({ onCloseModal }) => {
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation1>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>User Testing</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    구글폼을 통해 유저 테스트 진행
-                  </S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>User Testing</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

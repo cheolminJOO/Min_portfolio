@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { useState } from 'react';
+import { MouseEvent, useState } from 'react';
 import * as S from './Cheolmin.styles';
 import Velog from '../Modal/Velog/Velog';
 import UserTest from '../Modal/UserTest/UserTest';
@@ -87,14 +87,6 @@ const Cheolmin = () => {
               <S.TitleSpan color='#A1248D'>"꾸준히"</S.TitleSpan>
               <S.SubTitleSpan>평균 주 5회 TIL을 작성 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            {/* <div>
-              <S.YoutubeImg
-                src='/chrome.png'
-                alt='크롬 로고 '
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -115,15 +107,6 @@ const Cheolmin = () => {
               <S.TitleSpan color='#4B37C4'>"UX 관점에서 개발"</S.TitleSpan>
               <S.SubTitleSpan>구글폼을 통해 사용자 테스트 진행</S.SubTitleSpan>
             </S.TitleAndNumber>
-            {/* <div>
-              <S.YoutubeImg
-                onClick={onClickChrome}
-                src='/chrome.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -142,16 +125,8 @@ const Cheolmin = () => {
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
               <S.TitleSpan color='#2438A1'>"다 같이 함께"</S.TitleSpan>
-              <S.SubTitleSpan>42일, 6명의 멤버, 1등 </S.SubTitleSpan>
+              <S.SubTitleSpan>99일, 4개의 팀 프로젝트 </S.SubTitleSpan>
             </S.TitleAndNumber>
-            {/* <div>
-              <S.YoutubeImg
-                src='/youtubeLogo.png'
-                alt='유튜브 로고'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              />
-            </div> */}
           </S.TitleAndNumberBox>
           <div>
             <S.ProjectImg
@@ -187,8 +162,6 @@ const Cheolmin = () => {
             />
           </div>
         </S.ProjectBoxDiv>
-        <div></div>
-        <div></div>
       </S.ProjectBox>
     </S.Container>
   );

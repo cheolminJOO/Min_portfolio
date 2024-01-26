@@ -42,12 +42,21 @@ export const Div = styled.div`
   align-items: center;
 `;
 
+export const TitleAndSub = styled.div`
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+`;
+
 export const TitleBoxDiv = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid black;
+  justify-content: space-between;
 `;
 
 export const ContentsTitle = styled.td`
@@ -109,7 +118,19 @@ export const TitleSpan = styled.span`
   font-weight: 700;
 `;
 
-export const SubTitleSpan = styled.span`
+export const TitleAndCancel = styled.span`
+  color: black;
+  left: 80%;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  &:hover {
+    color: purple;
+  }
+`;
+
+export const SubTitleSpan = styled.div`
   color: #646464;
   font-size: 17.063px;
   font-weight: bolder;

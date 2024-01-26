@@ -23,7 +23,7 @@ export const ModalContentDiv = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
-  border-radius: 50px;
+  border-radius: 100px 0px 100px 100px;
   align-items: center;
   justify-content: space-between;
 `;
@@ -38,9 +38,30 @@ export const Div = styled.div`
 export const TitleBoxDiv = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+`;
+
+export const TitleAndSub = styled.div`
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+`;
+
+export const TitleAndCancel = styled.span`
+  color: black;
+  left: 80%;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  &:hover {
+    color: purple;
+  }
 `;
 
 export const ContentsTitle = styled.td`

@@ -23,7 +23,6 @@ export const ForumBtn = styled.button`
   margin-right: 10px;
 `;
 
-
 export const ModalContentDiv = styled.div`
   width: 500px;
   height: 500px;
@@ -46,9 +45,22 @@ export const Div = styled.div`
 export const TitleBoxDiv = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid black;
+  justify-content: space-between;
+`;
+
+export const TitleAndCancel = styled.span`
+  color: black;
+  left: 80%;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  &:hover {
+    color: purple;
+  }
 `;
 
 export const ContentsTitle = styled.td`
@@ -102,6 +114,14 @@ export const StyleButton = styled.div`
   text-align: center;
   font-size: 20px;
   font-weight: 500;
+`;
+
+export const TitleAndSub = styled.div`
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 `;
 
 export const TitleSpan = styled.span`

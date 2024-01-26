@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import * as S from './BUSU.styles';
 import Portal from '../../Portal/Portal';
 import Animation2 from '../../Animation/Animation2';
@@ -14,16 +14,22 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
       '_blank'
     );
   };
+
+  const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation2>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>BUSU</S.TitleSpan>
-                  <S.SubTitleSpan>중고매매 커뮤니티 서비스</S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>BUSU</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>

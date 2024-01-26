@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import * as S from './Epis.styles';
 import Portal from '../../Portal/Portal';
 import Animation3 from '../../Animation/Animation3';
@@ -7,6 +7,10 @@ interface CloseModal {
   onCloseModal: () => void;
 }
 
+const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
+  event.stopPropagation();
+};
+
 const Epis: React.FC<CloseModal> = ({ onCloseModal }) => {
   return (
     <Portal>
@@ -14,12 +18,12 @@ const Epis: React.FC<CloseModal> = ({ onCloseModal }) => {
         <S.Div>
           <S.ContainerDiv className='modal'>
             <Animation3>
-              <S.ModalContentDiv>
+              <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleSpan>EPIS</S.TitleSpan>
-                  <S.SubTitleSpan>
-                    입력하신 내용이 모두 사라져요!
-                  </S.SubTitleSpan>
+                  <S.TitleAndSub>
+                    <S.TitleSpan>EPIS</S.TitleSpan>
+                  </S.TitleAndSub>
+                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
                   <S.ContentsText>기간</S.ContentsText>
