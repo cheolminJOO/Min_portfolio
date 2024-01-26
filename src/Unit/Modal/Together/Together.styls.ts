@@ -74,7 +74,8 @@ export const TitleAndCancel = styled.span`
   font-weight: bolder;
   font-size: 30px;
   margin-right: 20px;
-  cursor: pointer;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
   &:hover {
     color: purple;
   }
