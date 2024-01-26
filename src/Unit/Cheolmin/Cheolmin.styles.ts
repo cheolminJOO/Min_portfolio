@@ -85,7 +85,6 @@ export const ProjectBox = styled.div`
   }
 `;
 
-
 export const Numbering = styled.div`
   font-size: 20px;
   color: black;

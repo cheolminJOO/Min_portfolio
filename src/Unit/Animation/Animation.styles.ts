@@ -49,6 +49,24 @@ export const rollEffect = {
   },
 };
 
+export const rollingSquere = {
+  initial: {
+    x: -1200,
+    y: 0,
+    opacity: 1,
+    Infinity,
+  },
+  in: {
+    x: 0,
+    y: 100,
+    opacity: 1,
+  },
+  out: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 export const fancyEffect = {
   initial: {
     scale: 0.8,

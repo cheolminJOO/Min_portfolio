@@ -1,5 +1,4 @@
-import * as S from './Dots.styels'
-
+import * as S from './Dots.styels';
 
 interface Pages {
   num?: number;
@@ -39,6 +38,7 @@ const Dots: React.FC<Pages> = ({ currentPage }) => {
         <Dot num={3} currentPage={currentPage}></Dot>
         <Dot num={4} currentPage={currentPage}></Dot>
         <Dot num={5} currentPage={currentPage}></Dot>
+        <Dot num={6} currentPage={currentPage}></Dot>
       </div>
     </div>
   );

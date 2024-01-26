@@ -7,6 +7,7 @@ import Experience from './Unit/Experience/Experience';
 import Cheolmin from './Unit/Cheolmin/Cheolmin';
 import Contact from './Unit/Contact/Contact';
 import Introduction from './Unit/Introduce/Introduction';
+import Thinkness from './Unit/Thinkness/Thinkness';
 
 function App() {
   const DIVIDER_HEIGHT = 5;
@@ -65,7 +66,6 @@ function App() {
           });
           setCurrentPage(4);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
-          setIsActiveFireWork(true);
           // 현재 4페이지
           console.log('현재 3페이지, up');
           outerDivRef.current.scrollTo({
@@ -74,6 +74,16 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(5);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
+          setIsActiveFireWork(true);
+          // 현재 4페이지
+          console.log('현재 3페이지, up');
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 5 + DIVIDER_HEIGHT * 5,
+            left: 0,
+            behavior: 'smooth',
+          });
+          setCurrentPage(6);
         }
       } else {
         // 스크롤 올릴 때
@@ -112,13 +122,20 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(3);
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
           outerDivRef.current.scrollTo({
             top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
             left: 0,
             behavior: 'smooth',
           });
           setCurrentPage(4);
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 6) {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 4,
+            left: 0,
+            behavior: 'smooth',
+          });
+          setCurrentPage(5);
         }
       }
     };
@@ -153,6 +170,7 @@ function App() {
       <Project />
       <Experience />
       <Cheolmin />
+      <Thinkness />
       <Contact
         isActiveFireWork={isActiveFireWork}
         setIsActiveFireWork={setIsActiveFireWork}

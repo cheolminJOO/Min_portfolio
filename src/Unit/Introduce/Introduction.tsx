@@ -31,33 +31,33 @@ const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
       gravity: 0.5,
     };
   };
-  const completionWord = '부딪히는_';
+  // const completionWord = '부딪히는_';
 
-  const [blogTitle, setBlogTitle] = useState('');
-  const [count, setCount] = useState(0);
+  // const [blogTitle, setBlogTitle] = useState('');
+  // const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const typingInterval = setInterval(() => {
-      setBlogTitle((prevTitleValue) => {
-        const result = prevTitleValue
-          ? prevTitleValue + completionWord[count]
-          : completionWord[0];
-        setCount(count + 1);
-        console.log(blogTitle);
+  // useEffect(() => {
+  //   const typingInterval = setInterval(() => {
+  //     setBlogTitle((prevTitleValue) => {
+  //       const result = prevTitleValue
+  //         ? prevTitleValue + completionWord[count]
+  //         : completionWord[0];
+  //       setCount(count + 1);
+  //       console.log(blogTitle);
 
-        if (count >= completionWord.length) {
-          setCount(0);
-          setBlogTitle('');
-        }
+  //       if (count >= completionWord.length) {
+  //         setCount(0);
+  //         setBlogTitle('');
+  //       }
 
-        return result;
-      });
-    }, 300);
+  //       return result;
+  //     });
+  //   }, 300);
 
-    return () => {
-      clearInterval(typingInterval);
-    };
-  });
+  //   return () => {
+  //     clearInterval(typingInterval);
+  //   };
+  // });
 
   return (
     <S.Container>
