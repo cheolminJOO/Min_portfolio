@@ -91,7 +91,7 @@ export const HeaderDiv = styled.div`
 
 export const LightHouseDiv = styled.div`
   width: 400px;
-  height: 315px;
+  height: 410px;
   border: 5px solid white;
   border-radius: 0px 150px 150px 0px;
   display: flex;
@@ -132,8 +132,8 @@ export const CheolMinImgDiv = styled.div`
 `;
 
 export const CheolMinImg = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 `;
 
 export const BoxContainer = styled.div`
@@ -174,7 +174,7 @@ export const WheelCircle = styled.div`
   height: 100px;
   border: 5px solid white;
   border-radius: 50px;
-  animation: ${rollingAnimation} 3s;
+  animation: ${rollingAnimation} 3s infinite;
 `;
 
 export const wheelCircleBox = styled.div`
@@ -199,12 +199,50 @@ export const TrainHeaderWheel = styled.div`
 
 export const SquareDiv = styled.div`
   width: 100px;
-  height: 50px;
+  height: 40px;
   border: 2px solid white;
 `;
 
 export const SquareMiniDiv = styled.div`
   width: 50px;
-  height: 25px;
+  height: 40px;
   border: 2px solid white;
+`;
+
+export const TitleSpan = styled.span`
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+`;
+
+export const RoofConnectionDiv = styled.div`
+  height: 30px;
+  width: 20px;
+  border: 3px solid white;
+  border-top: none;
+  border-bottom: none;
+`;
+
+export const RoofConnectionBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin-left: 100px;
+`;
+
+export const Roof = styled.div`
+  width: 400px;
+  height: 50px;
+  margin-left: 50px;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Cloud = styled.img`
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px;
 `;

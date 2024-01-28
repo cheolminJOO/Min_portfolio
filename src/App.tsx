@@ -14,6 +14,7 @@ function App() {
   const outerDivRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [isActiveFireWork, setIsActiveFireWork] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
     if (isActiveFireWork) {
@@ -74,6 +75,7 @@ function App() {
             behavior: 'smooth',
           });
           setCurrentPage(5);
+          setIsClicked(true);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
           setIsActiveFireWork(true);
           // 현재 4페이지
@@ -170,7 +172,7 @@ function App() {
       <Project />
       <Experience />
       <Cheolmin />
-      <Thinkness />
+      <Thinkness isClicked={isClicked} />
       <Contact
         isActiveFireWork={isActiveFireWork}
         setIsActiveFireWork={setIsActiveFireWork}
