@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import * as S from './Thinkness.styles';
 import Animation4 from '../Animation/Animation4';
+import Think from './Think/Think';
+import Why from './Why/Why';
 
 interface ITrain {
   isClicked: boolean;
@@ -31,7 +33,9 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                     <S.RoofConnectionDiv></S.RoofConnectionDiv>
                     <S.RoofConnectionDiv></S.RoofConnectionDiv>
                   </S.RoofConnectionBox>
-                  <S.BoxDiv></S.BoxDiv>
+                  <S.BoxDiv>
+                    <Think />
+                  </S.BoxDiv>
                   <S.wheelCircleBox>
                     <S.WheelCircle></S.WheelCircle>
                     <S.WheelCircle></S.WheelCircle>
@@ -49,7 +53,9 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                     <S.RoofConnectionDiv></S.RoofConnectionDiv>
                     <S.RoofConnectionDiv></S.RoofConnectionDiv>
                   </S.RoofConnectionBox>
-                  <S.BoxDiv></S.BoxDiv>
+                  <S.BoxDiv>
+                    <Why />
+                  </S.BoxDiv>
                   <S.wheelCircleBox>
                     <S.WheelCircle></S.WheelCircle>
                     <S.WheelCircle></S.WheelCircle>
