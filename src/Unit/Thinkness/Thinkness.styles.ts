@@ -12,6 +12,18 @@ const frameInAnimation = keyframes`
   }
 `;
 
+const movingAnimation = keyframes`
+  0% {
+    transform: translateX(500px);
+
+  }
+  100% {
+    transform: translateX(-1800px);
+
+
+  }
+`;
+
 const rollingAnimation = keyframes`
   0% {
     transform: translateX(-270px) ;
@@ -82,7 +94,7 @@ export const Container = styled.div`
 
 export const HeaderDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -242,7 +254,26 @@ export const Roof = styled.div`
 `;
 
 export const Cloud = styled.img`
-  height: 100px;
-  width: 100px;
-  margin-bottom: 30px;
+  height: 150px;
+  width: 150px;
+`;
+
+export const Sun = styled.img`
+  width: 200px;
+  height: 200px;
+`;
+
+export const MovingContainer = styled.div`
+  height: 20%;
+  display: flex;
+  width: 90%;
+  justify-content: end;
+`;
+
+export const MovingDIv = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 50px 30px 30px 50px;
+  border: 5px solid skyblue;
+  animation: ${movingAnimation} 5s infinite;
 `;
