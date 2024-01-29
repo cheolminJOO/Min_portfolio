@@ -41,10 +41,6 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                       <S.WheelCircle></S.WheelCircle>
                     </S.wheelCircleBox>
                   </S.TrainContainer>
-                  <S.ConnectionDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                  </S.ConnectionDiv>
                   <S.TrainContainer>
                     <S.Roof>
                       <S.TitleSpan>개발자가 된 이유</S.TitleSpan>
@@ -61,10 +57,6 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                       <S.WheelCircle></S.WheelCircle>
                     </S.wheelCircleBox>
                   </S.TrainContainer>
-                  <S.ConnectionDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                  </S.ConnectionDiv>
                   <S.TrainContainer>
                     <S.Roof>
                       <S.TitleSpan>경험</S.TitleSpan>
@@ -81,27 +73,7 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                       <S.WheelCircle></S.WheelCircle>
                     </S.wheelCircleBox>
                   </S.TrainContainer>
-                  <S.ConnectionDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                    <S.ConnectBarDiv></S.ConnectBarDiv>
-                  </S.ConnectionDiv>
                 </S.BoxContainer>
-                <S.TrainHeaderDiv>
-                  {/* <S.Cloud src='/grayCloud.png' alt='구름' /> */}
-                  <S.SquareMiniDiv></S.SquareMiniDiv>
-                  <S.SquareDiv></S.SquareDiv>
-                  <S.LightHouseDiv>
-                    <S.CheolMinImg
-                      src='/ThumbsUpCM.png'
-                      alt='철민'
-                      // onClick={onClickButton}
-                    />
-                  </S.LightHouseDiv>
-                  <S.wheelCircleBox>
-                    <S.WheelCircle></S.WheelCircle>
-                    <S.TrainHeaderWheel></S.TrainHeaderWheel>
-                  </S.wheelCircleBox>
-                </S.TrainHeaderDiv>
               </S.TestBox>
             </Animation4>
           </div>

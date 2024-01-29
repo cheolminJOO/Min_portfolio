@@ -126,7 +126,7 @@ export const CheolMinImg = styled.img`
 `;
 
 export const BoxContainer = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -160,8 +160,13 @@ export const BoxDiv = styled.div`
   height: 400px;
   border: 5px solid white;
   border-radius: 0px 50px 50px 0px;
+  margin-left: 70px;
   @media (max-width: 1900px) {
     margin-left: 100px;
+  }
+
+  @media (max-width: 1850px) {
+    margin-left: 50px;
   }
   @media (max-width: 1600px) {
     width: 400px;
@@ -208,6 +213,7 @@ export const WheelCircle = styled.div`
   height: 100px;
   border: 5px solid white;
   border-radius: 50px;
+  margin-left: 70px;
   animation: ${rollingAnimation} 3s infinite;
   @media (max-width: 1900px) {
     margin-left: 100px;

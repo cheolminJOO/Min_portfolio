@@ -60,7 +60,7 @@ export const DurationDiv = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 1850px) {
+  @media (max-width: 1210px) {
     display: none;
   }
 `;
