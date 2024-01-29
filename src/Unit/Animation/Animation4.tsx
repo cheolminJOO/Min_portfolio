@@ -12,7 +12,7 @@ const Animation4: React.FC<{ children: React.ReactNode }> = ({
       initial='initial'
       animate='in'
       exit='out'
-      transition={{ duration: 5}}
+      transition={{ duration: 3 }}
       variants={rollingSquere}
       {...rest}
     >

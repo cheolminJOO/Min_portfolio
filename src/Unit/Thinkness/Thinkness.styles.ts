@@ -220,6 +220,7 @@ export const SquareMiniDiv = styled.div`
   width: 50px;
   height: 40px;
   border: 2px solid white;
+  border-radius: 30px;
 `;
 
 export const TitleSpan = styled.span`

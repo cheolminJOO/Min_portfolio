@@ -4,14 +4,18 @@ import * as S from './Why.styles';
 const Why = () => {
   return (
     <S.container>
-      <S.Title>무에서 유를 창조</S.Title>
+      <S.BoxDiv>
+        <S.Title>무에서 유를 창조</S.Title>
+        <S.Contents>
+          내가 상상하는 모든 것을 직접 그려낼 수 있는 것은 컨텐츠를 기획하고
+          제작하는 것을 좋아하는 저에겐 너무나 매력적이었습니다.
+          <br />
+        </S.Contents>
+      </S.BoxDiv>
+      <S.Title>발전하는 삶</S.Title>
       <S.Contents>
-        내가 상상하는 것을 직접 그려낼 수 있는 것<br />
-      </S.Contents>
-
-      <S.Title>나아가는 삶</S.Title>
-      <S.Contents>
-        자신의 가치는 자신이 결정
+        한 곳에 머물기 보다는, 한 걸음이라도 나아갈수록 자신의 가치를 끌어 올릴
+        수 있는 IT 직군의 생태계
         <br />
       </S.Contents>
     </S.container>

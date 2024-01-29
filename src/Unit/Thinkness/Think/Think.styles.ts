@@ -4,6 +4,10 @@ export const container = styled.div`
   padding: 50px;
 `;
 
+export const BoxDiv = styled.div`
+  margin-bottom: 50px;
+`;
+
 export const Number = styled.span`
   font-size: 20px;
 `;
