@@ -1,5 +1,4 @@
 /* eslint-disable */
-import { useEffect, useState } from 'react';
 import * as S from './Introduction.style';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import Fireworks from 'react-canvas-confetti/dist/presets/fireworks';
