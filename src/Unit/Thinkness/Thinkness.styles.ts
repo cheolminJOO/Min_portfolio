@@ -12,18 +12,6 @@ const frameInAnimation = keyframes`
   }
 `;
 
-const movingAnimation = keyframes`
-  0% {
-    transform: translateX(500px);
-
-  }
-  100% {
-    transform: translateX(-1800px);
-
-
-  }
-`;
-
 const rollingAnimation = keyframes`
   0% {
     transform: translateX(-270px) ;

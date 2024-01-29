@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import * as S from './Favorite.styles';
 
 const Favorite = () => {
