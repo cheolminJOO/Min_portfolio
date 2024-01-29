@@ -24,7 +24,7 @@ export const TextBox = styled.div`
 `;
 
 export const ProfileImg = styled.img`
-  width: 600px;
+  width: 650px;
   height: 100%;
 
   @media (max-width: 900px) {
@@ -44,7 +44,6 @@ export const HightLightText = styled.div`
   font-size: 50px;
   font-weight: bolder;
   color: aqua;
-  border-right: 2px solid white;
   @media (max-width: 1060px) {
     display: flex;
     flex-direction: column;
