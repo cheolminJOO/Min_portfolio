@@ -168,6 +168,7 @@ export const BoxDiv = styled.div`
   width: 500px;
   height: 400px;
   border: 5px solid white;
+  border-radius: 0px 50px 50px 0px;
 `;
 
 export const TestBox = styled.div`
@@ -254,13 +255,13 @@ export const Roof = styled.div`
 `;
 
 export const Cloud = styled.img`
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 `;
 
 export const Sun = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
 `;
 
 export const MovingContainer = styled.div`
@@ -275,5 +276,4 @@ export const MovingDIv = styled.div`
   height: 50px;
   border-radius: 50px 30px 30px 50px;
   border: 5px solid skyblue;
-  animation: ${movingAnimation} 5s infinite;
 `;

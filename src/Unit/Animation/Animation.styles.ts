@@ -15,18 +15,18 @@ export const moveEffect = {
 
 export const windEffect = {
   initial: {
-    x: 500,
-    y: 50,
+    x: 0,
+    y: -50,
     opacity: 1,
   },
   in: {
     x: -1800,
-    y: 50,
+    y: -50,
     opacity: 1,
   },
   out: {
     x: 200,
-    y: 50,
+    y: -50,
     opacity: 1,
   },
 };

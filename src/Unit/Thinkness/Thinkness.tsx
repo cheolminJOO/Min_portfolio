@@ -16,13 +16,13 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
       <S.HeaderDiv>
         {isClicked && (
           <div>
-            <S.MovingContainer>
-              <Animation5>
-                <S.Sun src='/sun.png' alt='해' />
-                <S.Cloud src='/grayCloud.png' alt='회색구름' />
-              </Animation5>
-            </S.MovingContainer>
             <Animation4>
+              <S.MovingContainer>
+                <Animation5>
+                  <S.Sun src='/gray.png' alt='해' />
+                  <S.Cloud src='/grayCloud.png' alt='해' />
+                </Animation5>
+              </S.MovingContainer>
               <S.TestBox>
                 <S.BoxContainer>
                   <S.TrainContainer>
@@ -67,7 +67,7 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
                   </S.ConnectionDiv>
                   <S.TrainContainer>
                     <S.Roof>
-                      <S.TitleSpan>좋아하는 것</S.TitleSpan>
+                      <S.TitleSpan>경험</S.TitleSpan>
                     </S.Roof>
                     <S.RoofConnectionBox>
                       <S.RoofConnectionDiv></S.RoofConnectionDiv>
