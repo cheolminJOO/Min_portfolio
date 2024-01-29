@@ -99,17 +99,6 @@ export const LightHouseDiv = styled.div`
   z-index: 10;
 `;
 
-export const ClickBoxDiv = styled.div`
-  width: 200px;
-  height: 280px;
-  margin-top: 30px;
-  border: 5px solid white;
-  border-radius: 0px 150px 150px 0px;
-  display: flex;
-  /* animation: ${frameInAnimation} 10s ease-in-out infinite; */
-  z-index: 10;
-`;
-
 export const ClickText = styled.div`
   font-size: 20px;
   color: blue;
@@ -142,6 +131,14 @@ export const BoxContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1900px) {
+    width: 100%;
+  }
+  @media (max-width: 1500px) {
+    height: 400px;
+    border-radius: 0px;
+    width: 100%;
+  }
 `;
 
 export const ConnectionDiv = styled.div`
@@ -150,6 +147,12 @@ export const ConnectionDiv = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 100px;
+  @media (max-width: 1900px) {
+    display: none;
+  }
+  @media (max-width: 1500px) {
+    display: none;
+  }
 `;
 
 export const BoxDiv = styled.div`
@@ -157,6 +160,36 @@ export const BoxDiv = styled.div`
   height: 400px;
   border: 5px solid white;
   border-radius: 0px 50px 50px 0px;
+  @media (max-width: 1900px) {
+    margin-left: 100px;
+  }
+  @media (max-width: 1600px) {
+    width: 400px;
+    height: 400px;
+    border-radius: 0px;
+    border: 2px solid white;
+  }
+  @media (max-width: 1500px) {
+    width: 400px;
+    height: 400px;
+    border-radius: 0px;
+    border: 2px solid white;
+    margin-left: 50px;
+  }
+  @media (max-width: 1350px) {
+    width: 400px;
+    height: 400px;
+    border-radius: 0px;
+    border: 2px solid white;
+    margin-left: 0px;
+  }
+  @media (max-width: 1040px) {
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  @media (max-height: 844px) {
+  }
 `;
 
 export const TestBox = styled.div`
@@ -176,6 +209,12 @@ export const WheelCircle = styled.div`
   border: 5px solid white;
   border-radius: 50px;
   animation: ${rollingAnimation} 3s infinite;
+  @media (max-width: 1900px) {
+    margin-left: 100px;
+  }
+  @media (max-width: 1500px) {
+    display: none;
+  }
 `;
 
 export const wheelCircleBox = styled.div`
@@ -187,6 +226,9 @@ export const TrainHeaderDiv = styled.div`
   height: 600px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1900px) {
+    display: none;
+  }
 `;
 
 export const TrainHeaderWheel = styled.div`
@@ -223,6 +265,8 @@ export const RoofConnectionDiv = styled.div`
   border: 3px solid white;
   border-top: none;
   border-bottom: none;
+  @media (max-width: 1500px) {
+  }
 `;
 
 export const RoofConnectionBox = styled.div`
@@ -231,6 +275,14 @@ export const RoofConnectionBox = styled.div`
   align-items: center;
   width: 300px;
   margin-left: 100px;
+  @media (max-width: 1500px) {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
 `;
 
 export const Roof = styled.div`
@@ -241,6 +293,13 @@ export const Roof = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1500px) {
+    width: 350px;
+    margin-left: 25px;
+  }
+  @media (max-width: 1250px) {
+    display: none;
+  }
 `;
 
 export const Cloud = styled.img`
@@ -258,6 +317,9 @@ export const MovingContainer = styled.div`
   display: flex;
   width: 90%;
   justify-content: end;
+  @media (max-width: 1500px) {
+    display: none;
+  }
 `;
 
 export const MovingDIv = styled.div`

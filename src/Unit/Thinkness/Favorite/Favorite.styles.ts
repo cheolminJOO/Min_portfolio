@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const container = styled.div`
   padding: 10px 15px 10px 50px;
+  @media (max-width: 1100px) {
+    padding: 0px;
+  }
 `;
 
 export const Number = styled.span`
@@ -56,4 +59,8 @@ export const DurationDiv = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1850px) {
+    display: none;
+  }
 `;
