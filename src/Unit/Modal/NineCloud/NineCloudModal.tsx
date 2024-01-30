@@ -37,15 +37,12 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
                 <S.TitleBoxDiv>
                   <S.TitleAndSub isTrouble={isTrouble}>
                     {isTrouble && (
-                      <S.BackImg
-                        src='/backback.png'
-                        alt='뒤로가기'
-                        onClick={onClickBack}
-                      />
+                      <S.BackImgDiv onClick={onClickBack}>
+                        <S.BackImg src='/backback.png' alt='뒤로가기' />
+                      </S.BackImgDiv>
                     )}
                     <S.TitleSpan>Nine Cloud</S.TitleSpan>
                   </S.TitleAndSub>
-                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 {!isTrouble && (
                   <S.ProjectContainer>

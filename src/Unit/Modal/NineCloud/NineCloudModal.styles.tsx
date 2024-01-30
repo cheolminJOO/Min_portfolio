@@ -138,6 +138,13 @@ export const SubTitleSpan = styled.span`
   font-weight: bolder;
 `;
 
+export const BackImgDiv = styled.div`
+  width: 35px;
+  height: 30px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
 export const BackImg = styled.img`
   width: 25px;
   height: 30px;

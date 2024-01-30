@@ -20,11 +20,16 @@ export const ContainerDiv = styled.div`
 `;
 
 export const GithubImg = styled(motion.img)`
-  margin-left: 140px;
   width: 50px;
   height: 50px;
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
     auto;
+`;
+
+export const LogoDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const YoutubeImg = styled(motion.img)`
@@ -62,12 +67,54 @@ export const TitleBoxDiv = styled.div`
   justify-content: space-between;
 `;
 
+export const TroubleBtn = styled.button`
+  margin-top: 10px;
+  height: 30px;
+  line-height: 8px;
+  &:hover {
+    background-color: #5035a6;
+    color: white;
+  }
+`;
+
+export const ProjectTitle = styled.div`
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+`;
+
+export const BackImgDiv = styled.div`
+  width: 35px;
+  height: 30px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
+export const BackImg = styled.img`
+  width: 25px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
 export const TitleAndSub = styled.div<IProps>`
   width: 56%;
   display: flex;
   flex-direction: row;
   justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeaderDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const TitleAndCancel = styled.span`
@@ -151,7 +198,7 @@ export const SubTitleSpan = styled.span`
 export const ContentsText = styled.div`
   color: #646464;
   font-size: 17.063px;
-  font-weight: 400;
+  font-weight: bolder;
   margin-top: 10px; /* 위쪽 여백 추가 */
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
@@ -161,6 +208,7 @@ export const Contents = styled.div`
   font-size: 17.063px;
   font-weight: 400;
   margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-bottom: 15px;
   margin-left: 20px;
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;

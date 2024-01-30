@@ -38,23 +38,29 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                 <S.TitleBoxDiv>
                   <S.TitleAndSub isTrouble={isTrouble}>
                     {isTrouble && (
-                      <button onClick={onClickBack}>뒤로가기</button>
+                      <S.BackImgDiv onClick={onClickBack}>
+                        <S.BackImg src='/backback.png' alt='뒤로가기' />
+                      </S.BackImgDiv>
                     )}
                     <S.TitleSpan>BUSU</S.TitleSpan>
                   </S.TitleAndSub>
-                  <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 {!isTrouble && (
-                  <div>
-                    <button onClick={onClickTroubleShooting}>트러블슈팅</button>
-                    <S.ContentsText>기간</S.ContentsText>
-                    <S.Contents> - 2023.08 ~ 2024.01</S.Contents>
-                    <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.ProjectContainer>
+                    <S.HeaderDiv>
+                      <S.ProjectTitle>프로젝트 개요</S.ProjectTitle>
+                      <S.TroubleBtn onClick={onClickTroubleShooting}>
+                        트러블슈팅
+                      </S.TroubleBtn>
+                    </S.HeaderDiv>
+                    <S.ContentsText>ο 기간</S.ContentsText>
+                    <S.Contents> 2023.08 ~ 2024.01</S.Contents>
+                    <S.ContentsText>ο Tech Stack</S.ContentsText>
                     <S.Contents>
                       {' '}
-                      - Next.js, TypeScript, Styled.Components, Recoil
+                      Next.js, TypeScript, Styled.Components, Recoil
                     </S.Contents>
-                    <S.ContentsText>주요기능</S.ContentsText>
+                    <S.ContentsText>ο 주요기능</S.ContentsText>
                     <S.Contents>
                       1. 무한스크롤 (react-infinite-scroller)
                       <br />
@@ -66,21 +72,23 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                       <br />
                       5. 알림창 (sweetAlert2)
                     </S.Contents>
-                    <S.GithubImg
-                      onClick={onClickGithub}
-                      src='/git.png'
-                      alt='깃허브'
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 1 }}
-                    />
-                    <S.YoutubeImg
-                      onClick={onClickGithub}
-                      src='/youtubeLogo.png'
-                      alt='유튜브 로고'
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 1 }}
-                    />
-                  </div>
+                    <S.LogoDiv>
+                      <S.GithubImg
+                        onClick={onClickGithub}
+                        src='/git.png'
+                        alt='깃허브'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                      />
+                      <S.YoutubeImg
+                        onClick={onClickGithub}
+                        src='/youtubeLogo.png'
+                        alt='유튜브 로고'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                      />
+                    </S.LogoDiv>
+                  </S.ProjectContainer>
                 )}
                 {isTrouble && <TroubleShooting />}
               </S.ModalContentDiv>

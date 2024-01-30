@@ -53,7 +53,6 @@ export const SubTitle = styled.div`
   font-size: 17.063px;
   font-weight: 400;
   font-weight: bold;
-  color: #646460;
 `;
 
 export const SubTitleContents = styled.div`
@@ -68,9 +67,9 @@ export const SubTitleContents = styled.div`
 
 export const SollutionTitle = styled.div`
   margin-left: 40px;
+  font-size: 17.063px;
+  font-weight: 400;
   font-weight: bold;
-  margin-top: 20px;
-  color: #646464;
 `;
 
 export const FirstSollution = styled.div`
@@ -88,11 +87,16 @@ export const FirstSollutionContents = styled.div`
 
 export const EffectTitle = styled.div`
   margin-left: 40px;
+  font-size: 17.063px;
+  font-weight: 400;
   font-weight: bold;
 `;
 
 export const EffectContents = styled.div`
+  font-size: 15px;
   margin-left: 50px;
+  margin-bottom: 10px;
+  color: #646464;
 `;
 
 export const BackImg = styled.img`
@@ -106,7 +110,6 @@ export const FirstButton = styled.button`
   background-color: white;
   color: black;
   font-weight: bolder;
-  border-radius: 30px 0px 30px 0px;
 
   &:hover {
     border-color: #5035a6;

@@ -12,11 +12,28 @@ const TroubleShooting = () => {
     setIsSecondTrouble(true);
   };
 
+  const onClickFirstTrouble = () => {
+    window.open(
+      'https://velog.io/@uiop3996/%EB%8B%AC%EB%A0%A5-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85',
+      '_blank'
+    );
+  };
+
+  const onClickSecondTrouble = () => {
+    window.open(
+      'https://velog.io/@uiop3996/textarea-%EB%8C%80%EC%8B%A0-react-quill%EB%A5%BC-%EC%8D%A8%EB%B3%B4%EC%9E%90',
+      '_blank'
+    );
+  };
+
   return (
     <S.Container>
       {!isSecondTrouble && (
         <S.ContentsBoxDiv>
-          <S.TitleText>문제 1 | 이미지 업로드</S.TitleText>
+          <S.HeaderDiv>
+            <S.TitleText>트러블슈팅 1 | 이미지 업로드</S.TitleText>
+            <S.VelogBtn onClick={onClickFirstTrouble}>기록</S.VelogBtn>
+          </S.HeaderDiv>
           <S.Contents>
             <S.SubTitle>ο 상황 </S.SubTitle>
             <S.SubTitleContents>
@@ -36,7 +53,10 @@ const TroubleShooting = () => {
       )}
       {isSecondTrouble && (
         <S.ContentsBoxDiv>
-          <S.TitleText>문제 2 | 게시판 검색 기능</S.TitleText>
+          <S.HeaderDiv>
+            <S.TitleText>트러블슈팅 2 | 게시판 검색</S.TitleText>
+            <S.VelogBtn onClick={onClickFirstTrouble}>기록</S.VelogBtn>
+          </S.HeaderDiv>
           <S.Contents>
             <S.SubTitle>ο 상황 </S.SubTitle>
             <S.SubTitleContents>
@@ -56,8 +76,8 @@ const TroubleShooting = () => {
         </S.ContentsBoxDiv>
       )}
       <S.PaginationDiv>
-        <button onClick={onClickFirstBtn}>1</button>
-        <button onClick={onClickSecondBtn}>2</button>
+        <S.FirstButton onClick={onClickFirstBtn}>1</S.FirstButton>
+        <S.FirstButton onClick={onClickSecondBtn}>2</S.FirstButton>
       </S.PaginationDiv>
     </S.Container>
   );

@@ -13,6 +13,11 @@ export const ContentsBoxDiv = styled.div`
   padding: 0px 40px;
 `;
 
+export const HeaderDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const TitleText = styled.div`
   color: black;
   font-size: 20px;
@@ -43,6 +48,7 @@ export const SubTitleContents = styled.div`
   font-size: 17.063px;
   font-weight: 400;
   margin-bottom: 20px;
+  color: #646464;
 `;
 
 export const SollutionTitle = styled.div`
@@ -58,6 +64,7 @@ export const FirstSollution = styled.div`
 export const FirstSollutionContents = styled.div`
   margin-left: 50px;
   margin-bottom: 20px;
+  color: #646464;
 `;
 
 export const EffectTitle = styled.div`
@@ -67,4 +74,35 @@ export const EffectTitle = styled.div`
 
 export const EffectContents = styled.div`
   margin-left: 50px;
+  color: #646464;
+`;
+
+export const VelogBtn = styled.button`
+  margin-bottom: 20px;
+  height: 30px;
+  line-height: 10px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+
+  &:hover {
+    background-color: #5035a6;
+  }
+`;
+
+export const FirstButton = styled.button`
+  margin-right: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+
+  &:hover {
+    border-color: #5035a6;
+    color: blueviolet;
+  }
+
+  &:click {
+    border-color: #5035a6;
+    color: blueviolet;
+  }
 `;
