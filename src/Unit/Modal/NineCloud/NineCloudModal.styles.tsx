@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { IProps } from './NineCloudModal.types';
 
 export const ContainerDiv = styled.div`
   position: fixed;
@@ -36,6 +37,7 @@ export const Contents = styled.div`
 `;
 
 export const GithubImg = styled(motion.img)`
+  margin-left: 140px;
   width: 50px;
   height: 50px;
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
@@ -59,7 +61,6 @@ export const ModalContentDiv = styled.div`
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 300px;
 `;
 
 export const Div = styled.div`
@@ -78,11 +79,11 @@ export const TitleBoxDiv = styled.div`
   justify-content: space-between;
 `;
 
-export const TitleAndSub = styled.div`
+export const TitleAndSub = styled.div<IProps>`
   width: 62%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
 `;
 

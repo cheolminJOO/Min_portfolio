@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { IProps } from './BUSU.types';
 
 export const ContainerDiv = styled.div`
   position: fixed;
@@ -19,6 +20,7 @@ export const ContainerDiv = styled.div`
 `;
 
 export const GithubImg = styled(motion.img)`
+  margin-left: 140px;
   width: 50px;
   height: 50px;
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
@@ -42,7 +44,6 @@ export const ModalContentDiv = styled.div`
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 300px;
 `;
 
 export const Div = styled.div`
@@ -61,16 +62,16 @@ export const TitleBoxDiv = styled.div`
   justify-content: space-between;
 `;
 
-export const TitleAndSub = styled.div`
+export const TitleAndSub = styled.div<IProps>`
   width: 56%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
 `;
 
 export const TitleAndCancel = styled.span`
-  color: white;
+  color: black;
   left: 80%;
   font-weight: bolder;
   font-size: 30px;
@@ -183,4 +184,9 @@ export const OkButton = styled.button`
   border-radius: 0 20px 0 20px;
   border: 0px;
   cursor: pointer;
+`;
+
+export const BlankBtn = styled.button`
+  width: 100px;
+  display: none;
 `;
