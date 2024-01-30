@@ -53,7 +53,7 @@ export const Div = styled.div`
 `;
 
 export const TitleBoxDiv = styled.div`
-  width: 100%;
+  width: 55%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,7 +62,7 @@ export const TitleBoxDiv = styled.div`
 `;
 
 export const TitleAndSub = styled.div`
-  width: 62%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -107,6 +107,7 @@ export const TitleSpan = styled.span`
   color: #5035a6;
   font-size: 23px;
   font-weight: 700;
+  margin-left: 50px;
 `;
 
 export const SubTitleSpan = styled.span`

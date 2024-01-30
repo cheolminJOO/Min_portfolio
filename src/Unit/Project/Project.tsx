@@ -122,26 +122,6 @@ const Project = () => {
           <S.TitleAndNumberBox>
             <S.TitleAndNumber>
               <S.Numbering>03 </S.Numbering>
-              <S.TitleSpan color='#E537C9'>INSTAGRAM(CLONE)</S.TitleSpan>
-              <S.SubTitleSpan>인스타그램 클론 사이트 </S.SubTitleSpan>
-            </S.TitleAndNumber>
-          </S.TitleAndNumberBox>
-          <div>
-            <S.ProjectImg
-              onClick={onClickThirdImg}
-              onMouseEnter={handleMouseEnter3}
-              onMouseLeave={handleMouseLeave3}
-              src={isThirdHovered ? '/insta.png' : '/BlackInsta.png'}
-              alt='instagram logo'
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 1 }}
-            />
-          </div>
-        </S.ProjectBoxDiv>
-        <S.ProjectBoxDiv>
-          <S.TitleAndNumberBox>
-            <S.TitleAndNumber>
-              <S.Numbering>04 </S.Numbering>
               <S.TitleSpan>Portfoilo</S.TitleSpan>
               <S.SubTitleSpan>포트폴리오 사이트 </S.SubTitleSpan>
             </S.TitleAndNumber>
@@ -154,6 +134,26 @@ const Project = () => {
               onMouseEnter={handleMouseEnter4}
               onMouseLeave={handleMouseLeave4}
               whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            />
+          </div>
+        </S.ProjectBoxDiv>
+        <S.ProjectBoxDiv>
+          <S.TitleAndNumberBox>
+            <S.TitleAndNumber>
+              <S.Numbering>04 </S.Numbering>
+              <S.TitleSpan color='#E537C9'>LOADING ... </S.TitleSpan>
+              <S.SubTitleSpan>앞으로 제작 될 사이트 </S.SubTitleSpan>
+            </S.TitleAndNumber>
+          </S.TitleAndNumberBox>
+          <div>
+            <S.ProjectImg
+              onClick={onClickThirdImg}
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3}
+              src={isThirdHovered ? '/LoadingC.png' : '/LoadingB.png'}
+              alt='instagram logo'
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1 }}
             />
           </div>

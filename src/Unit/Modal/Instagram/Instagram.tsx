@@ -24,37 +24,33 @@ const Instagram: React.FC<CloseModal> = ({ onCloseModal }) => {
               <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
                   <S.TitleAndSub>
-                    <S.TitleSpan>Instagram</S.TitleSpan>
+                    <S.TitleSpan>미정</S.TitleSpan>
                   </S.TitleAndSub>
                   <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간</S.ContentsText>
-                  <S.Contents> - 23.11.24 ~ 23.11.30</S.Contents>
-                  <S.ContentsText>Tech Stack</S.ContentsText>
+                  <S.ContentsText>사용하고자 하는 기술</S.ContentsText>
                   <S.Contents>
                     {' '}
-                    - React, Javascript, CRA, Styled-Components
+                    - Next.js, Vite, Tailwind, Storybook, TypeScript
                   </S.Contents>
-                  <S.ContentsText>주요 기능</S.ContentsText>
+                  <S.ContentsText>만들고자 하는 기능</S.ContentsText>
                   <S.Contents>
-                    1. 게시글,댓글 이모티콘 적용 (emoji-picker-react)
+                    1. 스크롤 반응형
                     <br />
-                    2. 모달 기능 구현 (react-portal)
+                    2. 간단한 채팅기능
                     <br />
-                    3. 이미지 미리보기 (FileReader)
+                    3. Canvas를 활용한 기능
                   </S.Contents>
                 </div>
                 <div>
                   <S.GithubImg
-                    onClick={onCLickGithub}
                     src='/git.png'
                     alt='깃허브'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
                   />
                   <S.YoutubeImg
-                    onClick={onCLickGithub}
                     src='/youtubeLogo.png'
                     alt='유튜브 로고'
                     whileHover={{ scale: 1.1 }}

@@ -35,7 +35,6 @@ export const TextBox = styled.div`
   }
 
   @media (max-height: 860px) {
-    display: none;
   }
 
   @media (max-width: 915px) {
