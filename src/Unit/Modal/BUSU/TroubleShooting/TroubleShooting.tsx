@@ -14,16 +14,13 @@ const TroubleShooting = () => {
 
   const onClickFirstTrouble = () => {
     window.open(
-      'https://velog.io/@uiop3996/%EB%8B%AC%EB%A0%A5-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85',
+      'https://velog.io/@uiop3996/231024-%ED%95%AD%ED%95%B499-10%EC%9D%BC%EC%B0%A8-Image-preView',
       '_blank'
     );
   };
 
   const onClickSecondTrouble = () => {
-    window.open(
-      'https://velog.io/@uiop3996/textarea-%EB%8C%80%EC%8B%A0-react-quill%EB%A5%BC-%EC%8D%A8%EB%B3%B4%EC%9E%90',
-      '_blank'
-    );
+    window.open('https://velog.io/@uiop3996/search', '_blank');
   };
 
   return (
@@ -55,7 +52,7 @@ const TroubleShooting = () => {
         <S.ContentsBoxDiv>
           <S.HeaderDiv>
             <S.TitleText>트러블슈팅 2 | 게시판 검색</S.TitleText>
-            <S.VelogBtn onClick={onClickFirstTrouble}>기록</S.VelogBtn>
+            <S.VelogBtn onClick={onClickSecondTrouble}>기록</S.VelogBtn>
           </S.HeaderDiv>
           <S.Contents>
             <S.SubTitle>ο 상황 </S.SubTitle>
