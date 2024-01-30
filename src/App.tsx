@@ -35,7 +35,7 @@ function App() {
 
       const { deltaY } = e;
       const { scrollTop } = outerDivRef.current; // 스크롤 위쪽 끝부분 위치
-      const pageHeight = window.innerHeight; // 화면 세로길이, 100vh와 같습니다.
+      const pageHeight = window.innerHeight; // 화면 세로길이, 100vh와 같다.
 
       if (deltaY > 0) {
         // 스크롤 내릴 때
