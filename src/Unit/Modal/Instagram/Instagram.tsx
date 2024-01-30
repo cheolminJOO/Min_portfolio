@@ -8,9 +8,6 @@ interface CloseModal {
 }
 
 const Instagram: React.FC<CloseModal> = ({ onCloseModal }) => {
-  const onCLickGithub = () => {
-    window.open('https://github.com/insta-clone-hh99/front', '_blank');
-  };
 
   const onClickModalDiv = (event: MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
