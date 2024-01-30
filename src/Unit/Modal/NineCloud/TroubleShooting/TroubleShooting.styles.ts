@@ -29,6 +29,12 @@ export const VelogBtn = styled.button`
   margin-bottom: 20px;
   height: 30px;
   line-height: 10px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+
+  &:hover {
+    background-color: #5035a6;
+  }
 `;
 
 export const Contents = styled.span`
@@ -47,29 +53,37 @@ export const SubTitle = styled.div`
   font-size: 17.063px;
   font-weight: 400;
   font-weight: bold;
+  color: #646460;
 `;
 
 export const SubTitleContents = styled.div`
-  margin-left: 50px;
-  font-size: 15px;
+  color: #646464;
+  font-size: 17.063px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 50px;
+  margin-bottom: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
 export const SollutionTitle = styled.div`
   margin-left: 40px;
   font-weight: bold;
   margin-top: 20px;
+  color: #646464;
 `;
 
 export const FirstSollution = styled.div`
   margin-left: 50px;
+  color: #5035a6;
+  font-weight: 400;
 `;
 
 export const FirstSollutionContents = styled.div`
   font-size: 15px;
   margin-left: 50px;
   margin-bottom: 10px;
+  color: #646464;
 `;
 
 export const EffectTitle = styled.div`
@@ -79,4 +93,28 @@ export const EffectTitle = styled.div`
 
 export const EffectContents = styled.div`
   margin-left: 50px;
+`;
+
+export const BackImg = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+
+export const FirstButton = styled.button`
+  margin-right: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border-radius: 30px 0px 30px 0px;
+
+  &:hover {
+    border-color: #5035a6;
+    color: blueviolet;
+  }
+
+  &:click {
+    border-color: #5035a6;
+    color: blueviolet;
+  }
 `;

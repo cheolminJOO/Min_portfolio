@@ -24,6 +24,7 @@ export const ContentsText = styled.div`
   font-size: 17.063px;
   font-weight: bolder;
   margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 15px;
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
@@ -32,12 +33,12 @@ export const Contents = styled.div`
   font-size: 17.063px;
   font-weight: 400;
   margin-top: 10px; /* 위쪽 여백 추가 */
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
 
 export const GithubImg = styled(motion.img)`
-  margin-left: 140px;
   width: 50px;
   height: 50px;
   cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
@@ -135,4 +136,45 @@ export const SubTitleSpan = styled.span`
   color: #646464;
   font-size: 17.063px;
   font-weight: bolder;
+`;
+
+export const BackImg = styled.img`
+  width: 25px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
+export const TroubleBtn = styled.button`
+  margin-top: 10px;
+  height: 30px;
+  line-height: 8px;
+  &:hover {
+    background-color: #5035a6;
+    color: white;
+  }
+`;
+
+export const HeaderDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const ProjectTitle = styled.div`
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const LogoDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
