@@ -318,6 +318,11 @@ export const Sun = styled.img`
   height: 100px;
 `;
 
+export const MinCloud = styled.img`
+  width: 150px;
+  height: 150px;
+`;
+
 export const MovingContainer = styled.div`
   height: 20%;
   display: flex;

@@ -9,7 +9,7 @@ const Think = () => {
       </S.BoxDiv>
       <S.BoxDiv>
         <S.Title>Just Do It</S.Title> 무언가를 할 때, 망설이기 보다는 일단
-        시작하고, 최고의 결과물을 만들어내기 위해 최선을 다 합니다.
+        부딪히고, 최고의 결과물을 만들어내기 위해 최선을 다 합니다.
       </S.BoxDiv>
     </S.container>
   );

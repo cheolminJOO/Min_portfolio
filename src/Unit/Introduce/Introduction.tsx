@@ -2,6 +2,7 @@
 import * as S from './Introduction.style';
 import { ScrollAnimationContainer } from '../ScrollAnimation/ScrollAnimationContainer';
 import Fireworks from 'react-canvas-confetti/dist/presets/fireworks';
+import { useState } from 'react';
 
 interface IProps {
   isActiveFireWork: boolean;
@@ -16,6 +17,15 @@ const canvasStyles: React.CSSProperties = {
 };
 
 const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   const decorateOptions = (originalOptions: any) => {
     return {
       ...originalOptions,
@@ -30,34 +40,6 @@ const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
       gravity: 0.5,
     };
   };
-  // const completionWord = '부딪히는_';
-
-  // const [blogTitle, setBlogTitle] = useState('');
-  // const [count, setCount] = useState(0);
-
-  // useEffect(() => {
-  //   const typingInterval = setInterval(() => {
-  //     setBlogTitle((prevTitleValue) => {
-  //       const result = prevTitleValue
-  //         ? prevTitleValue + completionWord[count]
-  //         : completionWord[0];
-  //       setCount(count + 1);
-  //       console.log(blogTitle);
-
-  //       if (count >= completionWord.length) {
-  //         setCount(0);
-  //         setBlogTitle('');
-  //       }
-
-  //       return result;
-  //     });
-  //   }, 300);
-
-  //   return () => {
-  //     clearInterval(typingInterval);
-  //   };
-  // });
-
   return (
     <S.Container>
       {isActiveFireWork && (
@@ -76,7 +58,13 @@ const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
         </S.FirstLineTextBox>
         <S.SecondText>개발자 주철민 입니다.</S.SecondText>
       </S.TextBox>
-      <S.ProfileImg src='/cheolmin.png' alt='프로필이미지' />
+
+      <S.ProfileImg
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        src={isHovered ? '/JJC.png' : '/JJB.png'}
+        alt='프로필이미지'
+      />
     </S.Container>
   );
 };

@@ -19,6 +19,7 @@ const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
             <Animation4>
               <S.MovingContainer>
                 <Animation5>
+                  <S.MinCloud src='/ThumbsUpCM.png' alt='해' />
                   <S.Sun src='/gray.png' alt='해' />
                   <S.Cloud src='/grayCloud.png' alt='해' />
                 </Animation5>

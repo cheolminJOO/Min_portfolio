@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   /* @media (min-width: 1500px) {
     width: 80vw;
@@ -24,8 +26,14 @@ export const TextBox = styled.div`
 `;
 
 export const ProfileImg = styled.img`
-  width: 650px;
-  height: 100%;
+  width: 690px;
+  height: 700px;
+  margin-right: 20rem;
+  @media (max-width: 1550px) {
+    width: 500px;
+    height: 500px;
+    margin-right: 0;
+  }
 
   @media (max-width: 900px) {
     display: none;
