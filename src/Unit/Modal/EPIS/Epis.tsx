@@ -47,7 +47,7 @@ const Epis: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.Contents> - 2021.11.08 ~ 2021.12.03</S.Contents>
                   <S.ContentsText>ο 역할</S.ContentsText>
                   <S.Contents>
-                    사회적 농업 경험 및 컨텐츠 기획과 제작
+                    사회적 기업 조사 및 컨텐츠 기획과 제작
                     <S.SubContents>1. 브이로그 형식의 동영상 </S.SubContents>
                     <S.SubContents>2. 브로셔 </S.SubContents>
                     <S.SubContents>3. PPT </S.SubContents>
