@@ -50,7 +50,7 @@ const Epis: React.FC<CloseModal> = ({ onCloseModal }) => {
                     사회적 기업 조사 및 컨텐츠 기획과 제작
                     <S.SubContents>1. 브이로그 형식의 동영상 </S.SubContents>
                     <S.SubContents>2. 브로셔 </S.SubContents>
-                    <S.SubContents>3. PPT </S.SubContents>
+                    <S.SubContents>3. PPT (사회적 농업 홍보) </S.SubContents>
                   </S.Contents>
                 </div>
                 <div>

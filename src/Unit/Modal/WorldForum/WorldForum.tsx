@@ -40,12 +40,9 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                     2022 세계무형문화유산포럼 기획 및 운영
                   </S.Contents>
                   <S.SubContents>
-                    1. 포럼 홈페이지 제작 업무 <br /> 2. 프로젝트 지원
+                    1. 포럼 홈페이지 제작 업무 <br /> 2. 전문가 초청 특별강연
+                    홍보 컨텐츠 기획 및 제작
                   </S.SubContents>
-                  <S.ContentsText>ο 성과</S.ContentsText>
-                  <S.Contents>
-                    전년 대비 방문자율 40% 상승
-                  </S.Contents>
                 </div>
                 <S.ForumBtn onClick={onClickChrome}>
                   포럼 홈페이지 이동

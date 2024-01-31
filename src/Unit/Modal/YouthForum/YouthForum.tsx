@@ -38,8 +38,6 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                     <S.SubContents>1. ZEP 맵 기획 및 제작</S.SubContents>
                     <S.SubContents>2. 서포터즈 운영 및 관리</S.SubContents>
                   </S.Contents>
-                  <S.ContentsText>ο 성과</S.ContentsText>
-                  <S.Contents> 유네스코 1면 등재</S.Contents>
                 </div>
                 <S.ForumBtn onClick={onClickSecondChrome}> ZEP 이동</S.ForumBtn>
               </S.ModalContentDiv>
