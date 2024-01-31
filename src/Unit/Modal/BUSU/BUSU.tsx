@@ -17,6 +17,10 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
     );
   };
 
+  const onClickYoutube = () => {
+    window.open('https://www.youtube.com/watch?v=4TAa1qzDcB0', '_blank');
+  };
+
   const onClickBack = () => {
     setIsTrouble(false);
   };
@@ -77,6 +81,13 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                         onClick={onClickGithub}
                         src='/git.png'
                         alt='깃허브'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                      />
+                      <S.YoutubeImg
+                        onClick={onClickYoutube}
+                        src='/youtubeLogo.png'
+                        alt='유튜브 로고'
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                       />
