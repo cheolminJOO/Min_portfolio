@@ -7,7 +7,7 @@ import Favorite from './Favorite/Favorite';
 import Animation5 from '../Animation/Animation.5';
 
 interface ITrain {
-  isClicked: boolean;
+  isClicked: boolean
 }
 
 const Thinkness: React.FC<ITrain> = ({ isClicked }) => {
