@@ -53,7 +53,7 @@ const Introduction: React.FC<IProps> = ({ isActiveFireWork }) => {
         <S.SecondText>안녕하세요.</S.SecondText>
         <S.FirstLineTextBox>
           <ScrollAnimationContainer>
-            <S.HightLightText>부딪히는</S.HightLightText>
+            <S.HightLightText>돌파하는</S.HightLightText>
           </ScrollAnimationContainer>
         </S.FirstLineTextBox>
         <S.SecondText>개발자 주철민 입니다.</S.SecondText>

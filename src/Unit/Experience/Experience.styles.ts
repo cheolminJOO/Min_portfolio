@@ -50,10 +50,11 @@ export const TextBox = styled.div`
   @media (max-width: 1500px) {
     height: 10%;
   }
-  @media (max-width: 915px) {
-  }
 
   @media (max-height: 860px) {
+  }
+
+  @media (max-width: 915px) {
     display: none;
   }
 `;

@@ -72,13 +72,6 @@ const Portfolio: React.FC<CloseModal> = ({ onCloseModal }) => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                       />
-                      <S.YoutubeImg
-                        onClick={onClickGithub}
-                        src='/youtubeLogo.png'
-                        alt='유튜브 로고'
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 1 }}
-                      />
                     </S.LogoDiv>
                   </S.ProjectContainer>
                 )}

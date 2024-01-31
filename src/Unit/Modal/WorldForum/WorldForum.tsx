@@ -33,17 +33,18 @@ const WorldForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간</S.ContentsText>
-                  <S.Contents> - 2022.03 ~ 2022.09</S.Contents>
-                  <S.ContentsText>내용</S.ContentsText>
-                  <S.Contents> - 2022 세계무형문화유산포럼 업무</S.Contents>
-                  <S.ContentsText>역할</S.ContentsText>
+                  <S.ContentsText>ο 기간</S.ContentsText>
+                  <S.Contents> 2022.03 ~ 2022.09</S.Contents>
+                  <S.ContentsText>ο 역할</S.ContentsText>
                   <S.Contents>
-                    1. 홈페이지 제작 업무 참여 <br /> 2. 포털사이트 등록
+                    2022 세계무형문화유산포럼 기획 및 운영
                   </S.Contents>
-                  <S.ContentsText>성과</S.ContentsText>
+                  <S.SubContents>
+                    1. 포럼 홈페이지 제작 업무 <br /> 2. 프로젝트 지원
+                  </S.SubContents>
+                  <S.ContentsText>ο 성과</S.ContentsText>
                   <S.Contents>
-                    SEO 최적화로 전년 대비 방문자율 40% 상승
+                    전년 대비 방문자율 40% 상승
                   </S.Contents>
                 </div>
                 <S.ForumBtn onClick={onClickChrome}>

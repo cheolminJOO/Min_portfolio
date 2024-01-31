@@ -30,17 +30,16 @@ const YouthForum: React.FC<CloseModal> = ({ onCloseModal }) => {
                   <S.TitleAndCancel onClick={onCloseModal}>X</S.TitleAndCancel>
                 </S.TitleBoxDiv>
                 <div>
-                  <S.ContentsText>기간</S.ContentsText>
-                  <S.Contents> - 2022.03 ~ 2022.09</S.Contents>
-                  <S.ContentsText>내용</S.ContentsText>
-                  <S.Contents> - 2022 YOUTH Forum 업무</S.Contents>
-                  <S.ContentsText>역할</S.ContentsText>
+                  <S.ContentsText>ο 기간</S.ContentsText>
+                  <S.Contents> 2022.03 ~ 2022.09</S.Contents>
+                  <S.ContentsText>ο 역할</S.ContentsText>
                   <S.Contents>
-                    {' '}
-                    - ZEP 맵 기획과 운영 및 프로그램 진행
+                    2022 YOUTH FORUM 프로젝트 기획 및 운영
+                    <S.SubContents>1. ZEP 맵 기획 및 제작</S.SubContents>
+                    <S.SubContents>2. 서포터즈 운영 및 관리</S.SubContents>
                   </S.Contents>
-                  <S.ContentsText>성과</S.ContentsText>
-                  <S.Contents> - 유네스코 1면 등재</S.Contents>
+                  <S.ContentsText>ο 성과</S.ContentsText>
+                  <S.Contents> 유네스코 1면 등재</S.Contents>
                 </div>
                 <S.ForumBtn onClick={onClickSecondChrome}> ZEP 이동</S.ForumBtn>
               </S.ModalContentDiv>

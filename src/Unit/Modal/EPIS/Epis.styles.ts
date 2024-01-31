@@ -133,11 +133,10 @@ export const SubTitleSpan = styled.span`
 export const ContentsText = styled.div`
   color: #646464;
   font-size: 17.063px;
-  font-weight: 400;
+  font-weight: bolder;
   margin-top: 10px; /* 위쪽 여백 추가 */
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
-
 export const Contents = styled.div`
   color: #646464;
   font-size: 17.063px;
@@ -167,4 +166,19 @@ export const OkButton = styled.button`
   border-radius: 0 20px 0 20px;
   border: 0px;
   cursor: pointer;
+`;
+
+export const ForumBtn = styled.button`
+  background-color: #5035a6;
+  margin-bottom: 20px;
+  margin-right: 10px;
+`;
+
+export const SubContents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
 `;

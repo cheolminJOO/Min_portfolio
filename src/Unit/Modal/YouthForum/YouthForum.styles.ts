@@ -38,6 +38,14 @@ export const Contents = styled.div`
   margin-left: 20px;
   white-space: pre-line; /* 줄 바꿈 유지 */
 `;
+export const SubContents = styled.div`
+  color: #646464;
+  font-size: 17.063px;
+  font-weight: 400;
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-left: 20px;
+  white-space: pre-line; /* 줄 바꿈 유지 */
+`;
 
 export const ModalContentDiv = styled.div`
   width: 500px;
