@@ -62,7 +62,7 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                     <S.ContentsText>ο Tech Stack</S.ContentsText>
                     <S.Contents>
                       {' '}
-                      Next.js, TypeScript, Styled.Components, Recoil
+                      Next.js, TypeScript, Emotion, Recoil
                     </S.Contents>
                     <S.ContentsText>ο 주요기능</S.ContentsText>
                     <S.Contents>
