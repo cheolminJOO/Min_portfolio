@@ -110,6 +110,7 @@ export const TitleAndSub = styled.div<IProps>`
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0px 40px;
 `;
 
 export const HeaderDiv = styled.div`

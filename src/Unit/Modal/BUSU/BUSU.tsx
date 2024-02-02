@@ -62,7 +62,8 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                     <S.ContentsText>ο Tech Stack</S.ContentsText>
                     <S.Contents>
                       {' '}
-                      Next.js, graphQL, React-hook-form,TypeScript, Emotion, Recoil
+                      Next.js, graphQL, React-hook-form,TypeScript, Emotion,
+                      Recoil
                     </S.Contents>
                     <S.ContentsText>ο 주요기능</S.ContentsText>
                     <S.Contents>
@@ -73,8 +74,6 @@ const BUSU: React.FC<CloseModal> = ({ onCloseModal }) => {
                       3. 게시판 검색 (refetch, search)
                       <br />
                       4. 주소 찾기 기능 (kakao 주소 api)
-                      <br />
-                      5. 알림창 (sweetAlert2)
                     </S.Contents>
                     <S.LogoDiv>
                       <S.GithubImg
