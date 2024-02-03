@@ -84,7 +84,8 @@ export const TitleAndSub = styled.div<IProps>`
   width: 62%;
   display: flex;
   flex-direction: row;
-  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
+  justify-content: ${({ isTrouble, isOptimization }) =>
+    isTrouble || isOptimization ? 'space-between' : 'end'};
   align-items: end;
 `;
 

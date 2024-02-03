@@ -4,9 +4,11 @@ import Portal from '../../Portal/Portal';
 import * as S from './NineCloudModal.styles';
 import { IOnClose } from './NineCloudModal.types';
 import TroubleShooting from './TroubleShooting/TroubleShooting';
+import Optimization from './Optimization/Optimization';
 
 const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
   const [isTrouble, setIsTrouble] = useState(false);
+  const [isOptimization, setIsOptimization] = useState(false);
   const onClickGithub = () => {
     window.open('https://github.com/final-project-hh99/front', '_blank');
   };
@@ -17,6 +19,7 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
 
   const onClickBack = () => {
     setIsTrouble(false);
+    setIsOptimization(false);
   };
 
   const onClickTroubleShooting = () => {
@@ -27,6 +30,10 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
     event.stopPropagation();
   };
 
+  const onClickOptimiationBtn = () => {
+    setIsOptimization(true);
+  };
+
   return (
     <Portal>
       <S.ContainerDiv onClick={onCloseModal}>
@@ -35,8 +42,16 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
             <Animation2>
               <S.ModalContentDiv onClick={onClickModalDiv}>
                 <S.TitleBoxDiv>
-                  <S.TitleAndSub isTrouble={isTrouble}>
+                  <S.TitleAndSub
+                    isOptimization={isOptimization}
+                    isTrouble={isTrouble}
+                  >
                     {isTrouble && (
+                      <S.BackImgDiv onClick={onClickBack}>
+                        <S.BackImg src='/backback.png' alt='뒤로가기' />
+                      </S.BackImgDiv>
+                    )}
+                    {isOptimization && (
                       <S.BackImgDiv onClick={onClickBack}>
                         <S.BackImg src='/backback.png' alt='뒤로가기' />
                       </S.BackImgDiv>
@@ -44,12 +59,15 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
                     <S.TitleSpan>Nine Cloud</S.TitleSpan>
                   </S.TitleAndSub>
                 </S.TitleBoxDiv>
-                {!isTrouble && (
+                {!isTrouble && !isOptimization && (
                   <S.ProjectContainer>
                     <S.HeaderDiv>
                       <S.ProjectTitle>프로젝트 개요</S.ProjectTitle>
                       <S.TroubleBtn onClick={onClickTroubleShooting}>
                         트러블슈팅
+                      </S.TroubleBtn>
+                      <S.TroubleBtn onClick={onClickOptimiationBtn}>
+                        최적화
                       </S.TroubleBtn>
                     </S.HeaderDiv>
                     <S.ContentsText>ο 기간</S.ContentsText>
@@ -88,6 +106,7 @@ const NineCloudModal: React.FC<IOnClose> = ({ onCloseModal }) => {
                   </S.ProjectContainer>
                 )}
                 {isTrouble && <TroubleShooting />}
+                {isOptimization && <Optimization />}
               </S.ModalContentDiv>
             </Animation2>
           </S.ContainerDiv>
