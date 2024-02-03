@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { IProps } from '../NineCloud/NineCloudModal.types';
+import { Iprops } from './Portfolio.types';
 
 export const ContainerDiv = styled.div`
   position: fixed;
@@ -76,11 +76,10 @@ export const TitleBoxDiv = styled.div`
   justify-content: space-between;
 `;
 
-export const TitleAndSub = styled.div<IProps>`
+export const TitleAndSub = styled.div<Iprops>`
   width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
 `;
 
