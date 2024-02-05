@@ -59,7 +59,7 @@ const UserTest: React.FC<CloseModal> = ({ onCloseModal }) => {
                     <S.HeaderDiv>
                       <S.ProjectTitle>유저테스트 개요</S.ProjectTitle>
                       <S.TroubleBtn onClick={onClickTroubleShooting}>
-                        트러블슈팅
+                        유저 테스트
                       </S.TroubleBtn>
                     </S.HeaderDiv>
                     <div>

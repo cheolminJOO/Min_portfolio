@@ -30,7 +30,7 @@ const TroubleShooting = () => {
       {!isSecondTrouble && (
         <S.ContentsBoxDiv>
           <S.HeaderDiv>
-            <S.TitleText>트러블슈팅 1 | 좋아요 기능</S.TitleText>
+            <S.TitleText>사례 1 | 좋아요 기능</S.TitleText>
             <S.VelogBtn onClick={onClickFirstTrouble}>기록</S.VelogBtn>
           </S.HeaderDiv>
           <S.Contents>
@@ -59,7 +59,7 @@ const TroubleShooting = () => {
       {isSecondTrouble && (
         <S.ContentsBoxDiv>
           <S.HeaderDiv>
-            <S.TitleText>트러블슈팅 2 | 달력 hover 효과</S.TitleText>
+            <S.TitleText>사례 2 | 달력 hover 효과</S.TitleText>
             <S.VelogBtn onClick={onClickSecondTrouble}>기록</S.VelogBtn>
           </S.HeaderDiv>
           <S.Contents>
