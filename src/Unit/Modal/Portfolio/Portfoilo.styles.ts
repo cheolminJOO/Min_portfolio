@@ -77,9 +77,10 @@ export const TitleBoxDiv = styled.div`
 `;
 
 export const TitleAndSub = styled.div<Iprops>`
-  width: 60%;
+  width: 56%;
   display: flex;
   flex-direction: row;
+  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
 `;
 
