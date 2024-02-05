@@ -4,5 +4,6 @@ export interface IOnClose {
 
 export interface IProps {
   isTrouble: boolean;
-  isOptimization: boolean;
+  isOptimization : boolean;
 }
+

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Iprops } from '../Portfolio/Portfolio.types';
 
 export const ContainerDiv = styled.div`
   position: fixed;
@@ -23,6 +24,13 @@ export const ForumBtn = styled.button`
   margin-right: 10px;
 `;
 
+export const LogoDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+`;
+
 export const ModalContentDiv = styled.div`
   width: 500px;
   height: 500px;
@@ -32,7 +40,6 @@ export const ModalContentDiv = styled.div`
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
-  justify-content: space-between;
 `;
 
 export const Div = styled.div`
@@ -42,11 +49,26 @@ export const Div = styled.div`
   align-items: center;
 `;
 
-export const TitleAndSub = styled.div`
-  width: 65%;
+export const BackImg = styled.img`
+  width: 25px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
+export const BackImgDiv = styled.div`
+  width: 35px;
+  height: 30px;
+  cursor: url('https://hanghaelv4.s3.ap-northeast-2.amazonaws.com/finger+(2).png'),
+    auto;
+`;
+
+export const TitleAndSub = styled.div<Iprops>`
+  width: 58%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: ${({ isTrouble }) => (isTrouble ? 'space-between' : 'end')};
   align-items: end;
 `;
 
@@ -118,6 +140,19 @@ export const TitleSpan = styled.span`
   font-weight: 700;
 `;
 
+export const HeaderDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+`;
+
+export const ProjectTitle = styled.div`
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+`;
+
 export const TitleAndCancel = styled.span`
   color: black;
   left: 80%;
@@ -152,6 +187,16 @@ export const Contents = styled.div`
   margin-top: 10px; /* 위쪽 여백 추가 */
   margin-left: 20px;
   white-space: pre-line; /* 줄 바꿈 유지 */
+`;
+
+export const TroubleBtn = styled.button`
+  margin-top: 10px;
+  height: 30px;
+  line-height: 8px;
+  &:hover {
+    background-color: #5035a6;
+    color: white;
+  }
 `;
 
 export const CancelButton = styled.button`
